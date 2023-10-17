@@ -1,0 +1,8 @@
+{
+  "name": "eslint-config-custom",
+  "private": true,
+  "devDependencies": {
+    "@vercel/style-guide": "^4.0.2",
+    "eslint-config-turbo": "^1.10.12"
+  }
+}

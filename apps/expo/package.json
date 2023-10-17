@@ -1,13 +1,17 @@
 {
   "name": "expo-app",
   "version": "1.0.0",
-  "main": "index.js",
   "private": true,
+  "main": "index.js",
   "scripts": {
-    "start": "npx expo start -c",
     "android": "npx expo run:android",
+    "eject": "npx expo eject",
     "ios": "npx expo run:ios",
-    "eject": "npx expo eject"
+    "start": "npx expo start -c"
+  },
+  "resolutions": {
+    "metro": "0.76.0",
+    "metro-resolver": "0.76.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.9",
@@ -41,12 +45,10 @@
     "@expo/metro-config": "~0.10.0",
     "@tamagui/babel-plugin": "latest",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "eslint-config-custom": "workspace:*",
+    "eslint-config-universe": "^11.3.0",
     "metro-minify-terser": "^0.74.1",
     "typescript": "^4.9.4"
-  },
-  "resolutions": {
-    "metro": "0.76.0",
-    "metro-resolver": "0.76.0"
   },
   "overrides": {
     "metro": "0.76.0",

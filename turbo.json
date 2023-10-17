@@ -7,6 +7,7 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**", "build/**", "node_modules/.cache/metro/**"]
     },
+    "lint": {},
     "dev": {
       "cache": false,
       "persistent": true

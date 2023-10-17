@@ -16,11 +16,11 @@ export default class Document extends NextDocument {
     AppRegistry.registerComponent('Main', () => Main)
     const page = await ctx.renderPage()
 
-    // @ts-ignore
+    // @ts-expect-error - need to fix types in @types/react-native-web
     const { getStyleElement } = AppRegistry.getApplication('Main')
 
     /**
-     * Note: be sure to keep tamagui styles after react-native-web styles like it is here!
+     * Note: be sure to keep Tamagui styles after react-native-web styles like it is here!
      * So Tamagui styles can override the react-native-web styles.
      */
     const styles = [
