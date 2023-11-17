@@ -3516,14 +3516,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@my/ui@workspace:packages/ui"
   dependencies:
-    "@tamagui/animations-react-native": latest
-    "@tamagui/build": latest
-    "@tamagui/font-inter": latest
-    "@tamagui/react-native-media-driver": latest
-    "@tamagui/shorthands": latest
-    "@tamagui/themes": latest
-    "@tamagui/toast": latest
-    tamagui: latest
+    "@tamagui/animations-react-native": ^1.76.0
+    "@tamagui/build": ^1.76.0
+    "@tamagui/font-inter": ^1.76.0
+    "@tamagui/react-native-media-driver": ^1.76.0
+    "@tamagui/shorthands": ^1.76.0
+    "@tamagui/themes": ^1.76.0
+    "@tamagui/toast": ^1.76.0
+    tamagui: ^1.76.0
   languageName: unknown
   linkType: soft
 
@@ -4370,9 +4370,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/animations-react-native@npm:1.74.18, @tamagui/animations-react-native@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/animations-react-native@npm:1.74.18"
+=======
+"@tamagui/animations-react-native@npm:1.76.0, @tamagui/animations-react-native@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/animations-react-native@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/use-presence": 1.74.18
     "@tamagui/web": 1.74.18
@@ -4409,9 +4415,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/babel-plugin@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/babel-plugin@npm:1.74.18"
+=======
+"@tamagui/babel-plugin@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/babel-plugin@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@babel/generator": ^7.21.5
     "@babel/helper-plugin-utils": ^7.21.5
@@ -4423,9 +4435,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/build@npm:1.74.18, @tamagui/build@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/build@npm:1.74.18"
+=======
+"@tamagui/build@npm:1.76.0, @tamagui/build@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/build@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@types/fs-extra": ^9.0.13
     chokidar: ^3.5.2
@@ -4531,10 +4549,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/colors@npm:1.74.18, @tamagui/colors@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/colors@npm:1.74.18"
   checksum: 29b79a53152fa3ccbe344e18896b7e247d7632d945bf0480023e0bd1f21a399a9c12a60d01139ff87f08055d7537857c9427001762e6c8e602f13089814ef9d7
+=======
+"@tamagui/colors@npm:1.76.0, @tamagui/colors@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/colors@npm:1.76.0"
+  checksum: a3fc23f84b857f5ecff138d243572877e35626c9e7b6228f5e15f7f4bc8f9431de6a80f0eb43b9142815ae38f5bac90579a98db8e8dcd75f0483ca2bbc1d56d2
+>>>>>>> e216bc1 (chore, bump to 1.76)
   languageName: node
   linkType: hard
 
@@ -4557,9 +4582,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/config@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/config@npm:1.74.18"
+=======
+"@tamagui/config@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/config@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/animations-css": 1.74.18
     "@tamagui/animations-moti": 1.74.18
@@ -4708,9 +4739,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/font-inter@npm:1.74.18, @tamagui/font-inter@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/font-inter@npm:1.74.18"
+=======
+"@tamagui/font-inter@npm:1.76.0, @tamagui/font-inter@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/font-inter@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/core": 1.74.18
   checksum: 9918ce76272c279d174bd5791692db524e2e22e3ca109c0890d1b036c99f986648bd4fe614e1eabac0dc74523f0ee7c993faf059cda98744f0190f9f6d01f035
@@ -4918,9 +4955,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/lucide-icons@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/lucide-icons@npm:1.74.18"
+=======
+"@tamagui/lucide-icons@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/lucide-icons@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/core": 1.74.18
     "@tamagui/helpers-icon": 1.74.18
@@ -4931,9 +4974,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/next-plugin@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/next-plugin@npm:1.74.18"
+=======
+"@tamagui/next-plugin@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/next-plugin@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@babel/preset-react": ^7.18.6
     "@tamagui/proxy-worm": 1.74.18
@@ -4955,9 +5004,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/next-theme@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/next-theme@npm:1.74.18"
+=======
+"@tamagui/next-theme@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/next-theme@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/use-event": 1.74.18
   peerDependencies:
@@ -5084,9 +5139,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/react-native-media-driver@npm:1.74.18, @tamagui/react-native-media-driver@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/react-native-media-driver@npm:1.74.18"
+=======
+"@tamagui/react-native-media-driver@npm:1.76.0, @tamagui/react-native-media-driver@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/react-native-media-driver@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/web": 1.74.18
   peerDependencies:
@@ -5246,10 +5307,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/shorthands@npm:1.74.18, @tamagui/shorthands@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/shorthands@npm:1.74.18"
   checksum: a8e2e6e2c9591b8a3370e6a1dd928b4531b98865f6cf67e1128724573927eafafd513755ef87a6085aa2342d9b65986a13c8219cebb63717082974b741f92cc7
+=======
+"@tamagui/shorthands@npm:1.76.0, @tamagui/shorthands@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/shorthands@npm:1.76.0"
+  checksum: 602b9a7be697b8968e75c1b74f11ad7882b5ec48416155e100b1b3829b8d9d8a79d25a2019ea7de7c4ea5db9ee30a0eed6ab73ce1d3c5d880599adfc34a250c0
+>>>>>>> e216bc1 (chore, bump to 1.76)
   languageName: node
   linkType: hard
 
@@ -5402,9 +5470,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/themes@npm:1.74.18, @tamagui/themes@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/themes@npm:1.74.18"
+=======
+"@tamagui/themes@npm:1.76.0, @tamagui/themes@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/themes@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/colors": 1.74.18
     "@tamagui/create-theme": 1.74.18
@@ -5421,9 +5495,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@tamagui/toast@npm:latest":
   version: 1.74.18
   resolution: "@tamagui/toast@npm:1.74.18"
+=======
+"@tamagui/toast@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "@tamagui/toast@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/animate-presence": 1.74.18
     "@tamagui/compose-refs": 1.74.18
@@ -6618,12 +6698,12 @@ __metadata:
   resolution: "app@workspace:packages/app"
   dependencies:
     "@my/ui": 0.0.1
-    "@tamagui/animations-react-native": latest
-    "@tamagui/colors": latest
-    "@tamagui/font-inter": latest
-    "@tamagui/lucide-icons": latest
-    "@tamagui/shorthands": latest
-    "@tamagui/themes": latest
+    "@tamagui/animations-react-native": ^1.76.0
+    "@tamagui/colors": ^1.76.0
+    "@tamagui/font-inter": ^1.76.0
+    "@tamagui/lucide-icons": ^1.76.0
+    "@tamagui/shorthands": ^1.76.0
+    "@tamagui/themes": ^1.76.0
     "@types/react": ^18.0.27
     "@types/react-native": ^0.71.3
     burnt: ^0.11.0
@@ -10069,7 +10149,7 @@ __metadata:
     "@expo/metro-config": ~0.10.0
     "@my/ui": 0.0.1
     "@react-navigation/native": ^6.1.6
-    "@tamagui/babel-plugin": latest
+    "@tamagui/babel-plugin": ^1.76.0
     app: 0.0.0
     babel-plugin-module-resolver: ^4.1.0
     babel-plugin-transform-inline-environment-variables: ^0.4.4
@@ -14636,9 +14716,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next-app@workspace:apps/next"
   dependencies:
-    "@tamagui/config": latest
-    "@tamagui/next-plugin": latest
-    "@tamagui/next-theme": latest
+    "@tamagui/config": ^1.76.0
+    "@tamagui/next-plugin": ^1.76.0
+    "@tamagui/next-theme": ^1.76.0
     "@types/node": ^18.6.4
     app: 0.0.0
     eslint-config-next: ^13.0.4
@@ -18126,9 +18206,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "tamagui@npm:latest":
   version: 1.74.18
   resolution: "tamagui@npm:1.74.18"
+=======
+"tamagui@npm:^1.76.0":
+  version: 1.76.0
+  resolution: "tamagui@npm:1.76.0"
+>>>>>>> e216bc1 (chore, bump to 1.76)
   dependencies:
     "@tamagui/accordion": 1.74.18
     "@tamagui/adapt": 1.74.18
