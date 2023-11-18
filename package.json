@@ -15,9 +15,9 @@
     "web:prod:serve": "yarn workspace next-app serve",
     "fix": "manypkg fix",
     "postinstall": "yarn check-deps && yarn build",
-    "build": "yarn workspaces foreach --exclude next-app run build",
-    "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest react-native-web-lite@latest",
-    "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary react-native-web-lite@canary",
+    "build": "yarn workspaces foreach --all --exclude next-app run build",
+    "upgrade:tamagui": "yarn up '*tamagui*' '@tamagui/*'",
+    "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary",
     "check-deps": "check-dependency-version-consistency ."
   },
   "resolutions": {
