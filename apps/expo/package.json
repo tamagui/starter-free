@@ -6,6 +6,10 @@
   "scripts": {
     "start": "npx expo start -c",
     "android": "npx expo run:android",
+    "eas:build:development:ios": "cross-env APP_ENV=development NODE_ENV=development eas build --profile development --platform ios",
+    "eas:build:staging:ios": "cross-env APP_ENV=staging eas build --profile staging --platform ios",
+    "eas:submit:staging:ios": "cross-env APP_ENV=staging eas submit --profile staging",
+    "eas:update:staging:ios": "cross-env APP_ENV=staging eas update --channel staging",
     "ios": "npx expo run:ios",
     "eject": "npx expo eject"
   },
