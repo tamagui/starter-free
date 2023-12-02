@@ -15,7 +15,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.yourprojectsname.app"
@@ -30,15 +32,8 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-router"],
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "7ea5034a-5c9b-4b9e-b37e-305471488705"
-      }
-    },
-    "owner": "your_expo_user_name"
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
