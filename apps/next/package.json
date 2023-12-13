@@ -20,6 +20,7 @@
     "react-native": "0.72.5",
     "react-native-web": "~0.19.6",
     "react-native-web-lite": "latest",
+    "tamagui": "latest",
     "vercel": "latest"
   },
   "devDependencies": {
