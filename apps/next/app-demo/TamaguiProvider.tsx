@@ -17,12 +17,6 @@ const config = createTamagui({
   themeClassNameOnRoot: false,
 })
 
-export type Conf = typeof config
-
-declare module 'tamagui' {
-  interface TamaguiCustomConfig extends Conf {}
-}
-
 export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useRootTheme()
 
