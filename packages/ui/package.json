@@ -1,13 +1,12 @@
 {
   "name": "@my/ui",
   "version": "0.0.1",
+  "private": true,
   "sideEffects": [
     "*.css"
   ],
-  "private": true,
-  "types": "./types/index",
   "main": "src/index.tsx",
-  "module:jsx": "src",
+  "types": "./types/index",
   "files": [
     "types",
     "dist"
@@ -26,6 +25,8 @@
     "tamagui": "^1.80.4"
   },
   "devDependencies": {
-    "@tamagui/build": "^1.80.4"
-  }
+    "@tamagui/build": "^1.80.4",
+    "eslint-config-custom": "0.0.0"
+  },
+  "module:jsx": "src"
 }
