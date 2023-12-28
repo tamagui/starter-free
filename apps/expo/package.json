@@ -4,8 +4,12 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "npx expo start -c",
+    "start": "cross-env EXPO_USE_METRO_WORKSPACE_ROOT=1 APP_ENV=development npx expo start -c",
     "android": "npx expo run:android",
+    "eas:build:development:ios": "cross-env APP_ENV=development NODE_ENV=development eas build --profile development --platform ios",
+    "eas:build:staging:ios": "cross-env APP_ENV=staging eas build --profile staging --platform ios",
+    "eas:submit:staging:ios": "cross-env APP_ENV=staging eas submit --profile staging",
+    "eas:update:staging:ios": "cross-env APP_ENV=staging eas update --channel staging",
     "ios": "npx expo run:ios",
     "eject": "npx expo eject"
   },
@@ -17,6 +21,7 @@
     "app": "0.0.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "burnt": "^0.11.0",
+    "cross-env": "^7.0.3",
     "expo": "^49.0.0",
     "expo-constants": "~14.4.2",
     "expo-dev-client": "~2.4.11",
