@@ -4,7 +4,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "npx expo start -c",
+    "start": "cross-env EXPO_USE_METRO_WORKSPACE_ROOT=1 APP_ENV=development npx expo start -c",
     "android": "npx expo run:android",
     "eas:build:development:ios": "cross-env APP_ENV=development NODE_ENV=development eas build --profile development --platform ios",
     "eas:build:staging:ios": "cross-env APP_ENV=staging eas build --profile staging --platform ios",
