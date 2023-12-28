@@ -1,5 +1,6 @@
 {
   "name": "eslint-config-custom",
+  "version": "0.0.0",
   "private": true,
   "devDependencies": {
     "@vercel/style-guide": "^4.0.2",
