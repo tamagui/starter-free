@@ -14915,6 +14915,7 @@ __metadata:
     react-native: "npm:0.72.6"
     react-native-web: "npm:~0.19.6"
     react-native-web-lite: "npm:^1.80.4"
+    tamagui: "npm:^1.80.4"
     vercel: "npm:latest"
   languageName: unknown
   linkType: soft
