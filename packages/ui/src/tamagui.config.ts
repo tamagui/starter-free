@@ -1,7 +1,8 @@
 import { createTamagui } from 'tamagui'
 import { createInterFont } from '@tamagui/font-inter'
 import { shorthands } from '@tamagui/shorthands'
-import { themes, tokens } from '@tamagui/themes'
+import { tokens } from '@tamagui/themes/v2'
+import { themes } from '@tamagui/themes/v2-themes'
 import { createMedia } from '@tamagui/react-native-media-driver'
 
 import { animations } from './animations'
@@ -55,6 +56,7 @@ export const config = createTamagui({
   animations,
   shouldAddPrefersColorThemes: true,
   themeClassNameOnRoot: true,
+  onlyAllowShorthands: true,
   shorthands,
   fonts: {
     body: bodyFont,
@@ -79,3 +81,6 @@ export const config = createTamagui({
     pointerCoarse: { pointer: 'coarse' },
   }),
 })
+
+// for the compiler to find it
+export default config

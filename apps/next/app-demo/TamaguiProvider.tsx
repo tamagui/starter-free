@@ -3,19 +3,11 @@
 import '@tamagui/core/reset.css'
 import '@tamagui/polyfill-dev'
 
-import { config as configBase } from '@tamagui/config/v2'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import { useServerInsertedHTML } from 'next/navigation'
 import React from 'react'
 import { StyleSheet } from 'react-native'
-import { createTamagui, TamaguiProvider as TamaguiProviderOG } from 'tamagui'
-
-import Tamagui from '../tamagui.config'
-
-const config = createTamagui({
-  ...configBase,
-  themeClassNameOnRoot: false,
-})
+import { config, TamaguiProvider as TamaguiProviderOG } from '@my/ui'
 
 export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useRootTheme()
@@ -28,7 +20,7 @@ export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => 
         <style dangerouslySetInnerHTML={{ __html: rnwStyle.textContent }} id={rnwStyle.id} />
         <style
           dangerouslySetInnerHTML={{
-            __html: Tamagui.getCSS({
+            __html: config.getCSS({
               // if you are using "outputCSS" option, you should use this "exclude"
               // if not, then you can leave the option out
               exclude: process.env.NODE_ENV === 'production' ? 'design-system' : null,

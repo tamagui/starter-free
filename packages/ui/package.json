@@ -5,7 +5,7 @@
     "*.css"
   ],
   "private": true,
-  "types": "./types/index",
+  "types": "./src",
   "main": "src/index.tsx",
   "module:jsx": "src",
   "files": [
@@ -13,8 +13,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tamagui-build",
-    "watch": "tamagui-build --watch"
+    "build": "tamagui-build --skip-types",
+    "watch": "tamagui-build --skip-types --watch"
   },
   "dependencies": {
     "@tamagui/animations-react-native": "^1.82.3",
