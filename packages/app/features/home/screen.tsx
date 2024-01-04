@@ -20,7 +20,7 @@ export function HomeScreen() {
 
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
-      <YStack space="$4" backgroundColor="$">
+      <YStack space="$4" bc="$background">
         <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
           Here's a basic starter to show navigating from one screen to another. This screen uses the
