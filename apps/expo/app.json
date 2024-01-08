@@ -30,6 +30,7 @@
       "package": "com.yourprojectsname.app"
     },
     "web": {
+      "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
