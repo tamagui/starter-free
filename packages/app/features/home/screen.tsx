@@ -9,14 +9,14 @@ import {
   XStack,
   YStack,
 } from '@my/ui'
-import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
+// import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
-import { useLink } from 'solito/link'
+// import { useLink } from 'solito/link'
 
 export function HomeScreen() {
-  const linkProps = useLink({
-    href: '/user/nate',
-  })
+  // const linkProps = useLink({
+  //   href: '/user/nate',
+  // })
 
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
@@ -46,7 +46,7 @@ export function HomeScreen() {
       </YStack>
 
       <XStack>
-        <Button {...linkProps}>Link to user</Button>
+        <Button>Link to user</Button>
       </XStack>
 
       <SheetDemo />
@@ -63,7 +63,6 @@ function SheetDemo() {
     <>
       <Button
         size="$6"
-        icon={open ? ChevronDown : ChevronUp}
         circular
         onPress={() => setOpen((x) => !x)}
       />
@@ -83,7 +82,6 @@ function SheetDemo() {
           <Button
             size="$6"
             circular
-            icon={ChevronDown}
             onPress={() => {
               setOpen(false)
               toast.show('Sheet closed!', {
