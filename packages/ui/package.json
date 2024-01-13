@@ -1,0 +1,27 @@
+{
+  "name": "@my/ui",
+  "version": "0.0.1",
+  "sideEffects": [
+    "*.css"
+  ],
+  "private": true,
+  "types": "./src",
+  "main": "src/index.tsx",
+  "module:jsx": "src",
+  "files": [
+    "types",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tamagui-build --skip-types",
+    "watch": "tamagui-build --skip-types --watch"
+  },
+  "dependencies": {
+    "@my/config": "0.0.1",
+    "@tamagui/toast": "^1.85.2",
+    "tamagui": "^1.85.2"
+  },
+  "devDependencies": {
+    "@tamagui/build": "^1.85.2"
+  }
+}
