@@ -7231,13 +7231,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-transform-inline-environment-variables@npm:^0.4.4":
-  version: 0.4.4
-  resolution: "babel-plugin-transform-inline-environment-variables@npm:0.4.4"
-  checksum: fa361287411301237fd8ce332aff4f8e8ccb8db30e87a2ddc7224c8bf7cd792eda47aca24dc2e09e70bce4c027bc8cbe22f4999056be37a25d2472945df21ef5
-  languageName: node
-  linkType: hard
-
 "babel-preset-expo@npm:~9.5.2":
   version: 9.5.2
   resolution: "babel-preset-expo@npm:9.5.2"
@@ -10325,7 +10318,6 @@ __metadata:
     "@tamagui/babel-plugin": "npm:^1.88.16"
     app: "npm:0.0.0"
     babel-plugin-module-resolver: "npm:^4.1.0"
-    babel-plugin-transform-inline-environment-variables: "npm:^0.4.4"
     burnt: "npm:^0.12.1"
     expo: "npm:^49.0.0"
     expo-constants: "npm:~14.4.2"
