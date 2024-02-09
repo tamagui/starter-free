@@ -56,8 +56,13 @@ export const config = createTamagui({
   animations,
   shouldAddPrefersColorThemes: true,
   themeClassNameOnRoot: true,
-  onlyAllowShorthands: true,
+  
+  // highly recommended to turn this on if you are using shorthands
+  // to avoid having multiple valid style keys that do the same thing
+  // we leave it off by default because it can be confusing as you onboard.
+  onlyAllowShorthands: false,
   shorthands,
+
   fonts: {
     body: bodyFont,
     heading: headingFont,
