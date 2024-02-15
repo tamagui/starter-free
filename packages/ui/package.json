@@ -18,10 +18,10 @@
   },
   "dependencies": {
     "@my/config": "0.0.1",
-    "@tamagui/toast": "^1.89.24",
-    "tamagui": "^1.89.24"
+    "@tamagui/toast": "^1.89.25",
+    "tamagui": "^1.89.25"
   },
   "devDependencies": {
-    "@tamagui/build": "^1.89.24"
+    "@tamagui/build": "^1.89.25"
   }
 }
