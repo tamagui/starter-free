@@ -1,5 +1,5 @@
 {
-  "name": "mangapp",
+  "name": "starter-free",
   "private": true,
   "workspaces": [
     "./apps/*",
