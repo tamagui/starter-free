@@ -48,4 +48,5 @@ thumbs.db
 **/.turbo/*
 
 # Ignore .history folder
-/history
+
+
