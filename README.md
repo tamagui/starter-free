@@ -1,4 +1,4 @@
-# Tamagui + Solito + Next + Expo Monorepo
+# Tamagui + Solito + Next + Expo Monorepo + MangaApp
 
 ```sh
 npm create tamagui
