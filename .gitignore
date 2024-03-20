@@ -49,3 +49,7 @@ thumbs.db
 
 # Ignore .history folder
 /history
+
+# Ignore Python bytecode files
+__pycache__
+__pycache__/*
