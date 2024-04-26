@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
@@ -8,5 +9,12 @@
     }
   },
   "extends": "tsconfig.base",
-  "exclude": ["**/node_modules", "**/dist", "**/types", "apps/next/out", "apps/next/.next", "apps/next/.tamagui"]
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "**/types",
+    "apps/next/out",
+    "apps/next/.next",
+    "apps/next/.tamagui"
+  ]
 }

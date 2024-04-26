@@ -11,11 +11,13 @@ import {
 } from '@my/ui'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
-import { useLink } from 'solito/link'
+import { Platform } from 'react-native'
+import { useLink } from 'solito/navigation'
 
-export function HomeScreen() {
+export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
+  const linkTarget = pagesMode ? '/pages-example-user' : '/user'
   const linkProps = useLink({
-    href: '/user/nate',
+    href: `${linkTarget}/nate`,
   })
 
   return (
@@ -26,7 +28,34 @@ export function HomeScreen() {
           Here's a basic starter to show navigating from one screen to another. This screen uses the
           same code on Next.js and React Native.
         </Paragraph>
-
+        <Separator />
+        <Paragraph ta="center">
+          This screen uses the same code on Next.js and React Native.
+        </Paragraph>
+        <>
+          {Platform.OS === 'web' && pagesMode ? (
+            <>
+              <Separator />
+              <Paragraph ta="center">
+                Note this page is using the <code>Next.js Pages Router</code> mode.
+              </Paragraph>
+              <Anchor ta="center" color="$color12" href="/">
+                Go to the app router example
+              </Anchor>
+            </>
+          ) : null}
+          {Platform.OS === 'web' && !pagesMode ? (
+            <>
+              <Separator />
+              <Paragraph ta="center">
+                Note this page is using the <code>Next.js App Router</code> mode.
+              </Paragraph>
+              <Anchor ta="center" color="$color12" href="/pages-example">
+                Go to the pages router example
+              </Anchor>
+            </>
+          ) : null}
+        </>
         <Separator />
         <Paragraph ta="center">
           Made by{' '}
@@ -86,9 +115,12 @@ function SheetDemo() {
             icon={ChevronDown}
             onPress={() => {
               setOpen(false)
-              toast.show('Sheet closed!', {
-                message: 'Just showing how toast works...',
-              })
+              // Custom Toast only works on Expo
+              if (Platform.OS !== 'web') {
+                toast.show('Sheet closed!', {
+                  message: 'Just showing how toast works...',
+                })
+              }
             }}
           />
         </Sheet.Frame>
