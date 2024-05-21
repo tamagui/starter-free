@@ -13950,6 +13950,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mangapp@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "mangapp@workspace:."
+  dependencies:
+    "@babel/runtime": "npm:^7.18.9"
+    "@manypkg/cli": "npm:^0.19.1"
+    check-dependency-version-consistency: "npm:^3.0.3"
+    eslint: "npm:^8.21.0"
+    node-gyp: "npm:^9.3.1"
+    prettier: "npm:^2.7.1"
+    turbo: "npm:^1.10.3"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "markdown-extensions@npm:^1.0.0":
   version: 1.1.1
   resolution: "markdown-extensions@npm:1.1.1"
@@ -18364,21 +18379,6 @@ __metadata:
   checksum: 10/f4fbddfc09121d91e587b60de4beb4941108e967d71ad3a171812dc839b010ca374d064ad0a296295fed13acd103609d99a4224a25b4e67de13cae131f1901ee
   languageName: node
   linkType: hard
-
-"mangapp@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "mangapp@workspace:."
-  dependencies:
-    "@babel/runtime": "npm:^7.18.9"
-    "@manypkg/cli": "npm:^0.19.1"
-    check-dependency-version-consistency: "npm:^3.0.3"
-    eslint: "npm:^8.21.0"
-    node-gyp: "npm:^9.3.1"
-    prettier: "npm:^2.7.1"
-    turbo: "npm:^1.10.3"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
 
 "statuses@npm:2.0.1":
   version: 2.0.1
