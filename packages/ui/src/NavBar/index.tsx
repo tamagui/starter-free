@@ -6,7 +6,7 @@ export const NavBar: React.FC = () => {
     return (
         <XStack>
             <SolitoImage
-            src="https://beatgig.com/image.png"
+            src="https://beatgig.com/image.pndg"
             height={100}
             width={100}
             alt="A cool artist's image."
