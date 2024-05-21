@@ -48,7 +48,7 @@ thumbs.db
 **/.turbo/*
 
 # Ignore .history folder
-/history
+/.history
 
 # Ignore Python bytecode files
 __pycache__

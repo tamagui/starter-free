@@ -1,7 +1,23 @@
 {
-  "trailingComma": "es5",
-  "semi": false,
+  "trailingComma": "all",
   "singleQuote": true,
-  "arrowParens": "always",
-  "printWidth": 100
+  "printWidth": 100,
+  "tabWidth": 2,
+  "semi": false,
+  "importOrder": [
+    "^react$",
+    "^next(/.+)?$",
+    "<THIRD_PARTY_MODULES>",
+    "^@centrito/db(/.+)?$",
+    "^@centrito/api(/.+)?$",
+    "^@centrito/common(/.+)?",
+    "^@centrito(/.+)?$",
+    "^@/utils(/.+)?$",
+    "^@/store(/.+)?$",
+    "^@/components(/.+)?$",
+    "^@/.+$",
+    "^[./]"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators"],
+  "importOrderSortSpecifiers": true
 }
