@@ -8,7 +8,8 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
   return (
     <TamaguiProvider
       config={config}
-      disableInjectCSS
+      // remove the next line if using app router
+      // disableInjectCSS
       defaultTheme={scheme === 'dark' ? 'dark' : 'light'}
       {...rest}
     >

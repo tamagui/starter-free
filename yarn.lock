@@ -6829,7 +6829,7 @@ __metadata:
     expo-constants: "npm:~14.4.2"
     expo-linking: "npm:~5.0.2"
     react-native-safe-area-context: "npm:4.6.3"
-    solito: "npm:^3.0.0"
+    solito: "npm:^4.2.2"
   languageName: unknown
   linkType: soft
 
@@ -9154,6 +9154,16 @@ __metadata:
   dependencies:
     once: "npm:^1.4.0"
   checksum: 10/530a5a5a1e517e962854a31693dbb5c0b2fc40b46dad2a56a2deec656ca040631124f4795823acc68238147805f8b021abbe221f4afed5ef3c8e8efc2024908b
+  languageName: node
+  linkType: hard
+
+"enhanced-resolve@npm:^5.10.0":
+  version: 5.16.1
+  resolution: "enhanced-resolve@npm:5.16.1"
+  dependencies:
+    graceful-fs: "npm:^4.2.4"
+    tapable: "npm:^2.2.0"
+  checksum: 10/1c44474437ec52d938ee0776d5883d5fec8fc645bccbebf6eb58229f3223c111bc1f5cb94222949a5a4565e7a2d7c34f03a0f7e97c10d6cd800e7a46c95e3aec
   languageName: node
   linkType: hard
 
@@ -14947,6 +14957,8 @@ __metadata:
     app: "npm:0.0.0"
     eslint-config-next: "npm:^13.0.4"
     next: "npm:^13.5.2"
+    next-compose-plugins: "npm:^2.2.1"
+    next-transpile-modules: "npm:^10.0.1"
     raf: "npm:^3.4.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -14957,6 +14969,22 @@ __metadata:
     vercel: "npm:latest"
   languageName: unknown
   linkType: soft
+
+"next-compose-plugins@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "next-compose-plugins@npm:2.2.1"
+  checksum: 10/e3c8b26617534d5eee06338c5d17779af1775830174e3640a56dc63ffcedfd6260c9dc0638b6d83ea24349c06cffe19b09b0831227ec0009f3f580332d0129a8
+  languageName: node
+  linkType: hard
+
+"next-transpile-modules@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "next-transpile-modules@npm:10.0.1"
+  dependencies:
+    enhanced-resolve: "npm:^5.10.0"
+  checksum: 10/ba8f8baef3d5657e0cc097f7102cd7acd62e593cdeed5fe77772de75915e3e9e28074a285e2214c652ee025b50fd5592493f384d1fb7bc82523777174e06ce1c
+  languageName: node
+  linkType: hard
 
 "next@npm:^13.5.2":
   version: 13.5.2
@@ -17874,10 +17902,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solito@npm:^3.0.0":
-  version: 3.2.6
-  resolution: "solito@npm:3.2.6"
-  checksum: 10/e7e45eaba087dcba211c3bd75550ca618c7a90e499432bc9a4f49870aabf1447935bcce17f85a8506fe412e122532d07a719d521eb3d50c372dfd6a47bcd016f
+"solito@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "solito@npm:4.2.2"
+  dependencies:
+    typescript: "npm:^5.0.4"
+  checksum: 10/39e410a8c75e6d3e66967e5aaff73efe299681936f46f8fb295050e1b2feed94b7656a42a6017eb18decd9493488c314f5d0bc987419d7c16243a6343e63fe4a
   languageName: node
   linkType: hard
 
@@ -19072,6 +19102,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:^5.0.4":
+  version: 5.4.5
+  resolution: "typescript@npm:5.4.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10/d04a9e27e6d83861f2126665aa8d84847e8ebabcea9125b9ebc30370b98cb38b5dff2508d74e2326a744938191a83a69aa9fddab41f193ffa43eabfdf3f190a5
+  languageName: node
+  linkType: hard
+
 "typescript@npm:^5.3.3":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
@@ -19089,6 +19129,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10/d2c881726ab28c7837b6dd5ee2e6d291c36526221d6ceb422201bda805cc9b7f800c6f7137b259147faa0640d457715cd382a2f2bef43b0141fd4e42105982ef
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A^5.0.4#optional!builtin<compat/typescript>":
+  version: 5.4.5
+  resolution: "typescript@patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=d69c25"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10/584be8bac7112ad49a9eb9992f71d542b1ff2fafb5bb315e1c196145e8feab589f1d7223cfb2d5df6770789582e6918f8287d1f2f89911b38eb80e29c560ad00
   languageName: node
   linkType: hard
 
