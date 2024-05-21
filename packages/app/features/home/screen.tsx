@@ -55,8 +55,8 @@ export function HomeScreen() {
       </XStack>
 
       {/* remove next two lines if using pages router */}
-      {/* <CustomToast />
-      <ToastViewport left={0} right={0} top={10} /> */}
+      <CustomToast />
+      <ToastViewport left={0} right={0} top={10} />
 
       <SheetDemo />
     </YStack>

@@ -27,7 +27,7 @@ export function UserDetailScreen() {
   return (
     <YStack f={1} jc="center" ai="center" gap="$4">
       <Paragraph ta="center" fow="700" col="$blue10">{`User ID: ${id}`}</Paragraph>
-      {/* // if using pages router */}
+      {/* // if using app router */}
       <Button icon={ChevronLeft} onPress={() => router.back()}>
         Go Home
       </Button>

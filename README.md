@@ -33,17 +33,17 @@ The main apps are:
 
 You can add other folders inside of `packages/` if you know what you're doing and have a good reason to.
 
+> [!TIP]
+> Switching from `app` to `pages` router:
+>
+> - delete `app` folder and rename `pages-demo` to `pages`
+> - search for `app router` and `pages router` keywords and follow the instructions
+
 ## 🏁 Start the app
 
 - Install dependencies: `yarn`
 
 - Next.js local dev: `yarn web`
-
-> **Note**
-> Switching from `pages` to `app` router:
->
-> - delete `pages` folder and rename `app-demo` to `app`
-> - search for `app` and `pages` keywords and follow the instruction
 
 To run with optimizer on in dev mode (just for testing, it's faster to leave it off): `yarn web:extract`. To build for production `yarn web:prod`.
 
