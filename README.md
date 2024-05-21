@@ -40,7 +40,10 @@ You can add other folders inside of `packages/` if you know what you're doing an
 - Next.js local dev: `yarn web`
 
 > **Note**
-> To use `app router`, delete `pages` folder and rename `app-demo` to `app`
+> Switching from `pages` to `app` router:
+>
+> - delete `pages` folder and rename `app-demo` to `app`
+> - search for `app` and `pages` keywords and follow the instruction
 
 To run with optimizer on in dev mode (just for testing, it's faster to leave it off): `yarn web:extract`. To build for production `yarn web:prod`.
 
