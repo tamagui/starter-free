@@ -1,14 +1,16 @@
 import React from 'react'
 import { XStack, Stack } from  '@my/ui/src'
-import { SolitoImage as Image } from 'solito/image'
+import { SolitoImage } from 'solito/image'
 
 export const NavBar: React.FC = () => {
     return (
         <XStack>
-                <Image src={'https://via.placeholder.com/150'}
-                    height={20}
-                    width={20}
-                    fill/>
+            <SolitoImage
+            src="https://beatgig.com/image.png"
+            height={100}
+            width={100}
+            alt="A cool artist's image."
+            />
         </XStack>
     )
 }
