@@ -9,7 +9,7 @@ export const NavBar: React.FC = () => {
             src="https://beatgig.com/image.pndg"
             height={100}
             width={100}
-            alt="A cool artist's image."
+            alt="A cool artist's imdadaage."
             />
         </XStack>
     )
