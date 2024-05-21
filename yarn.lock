@@ -3937,6 +3937,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native/assets-registry@npm:~0.74.83":
+  version: 0.74.83
+  resolution: "@react-native/assets-registry@npm:0.74.83"
+  checksum: 10/930d97c5c595d63810cda11f87125bfc11e91337a6f98cd33f72fcf1279fb016491b86232ed0523e2432d2a17f7a9f2abbe28547e70da42c6b341768a399defd
+  languageName: node
+  linkType: hard
+
 "@react-native/codegen@npm:^0.72.7":
   version: 0.72.7
   resolution: "@react-native/codegen@npm:0.72.7"
@@ -9157,6 +9164,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"enhanced-resolve@npm:^5.10.0":
+  version: 5.16.1
+  resolution: "enhanced-resolve@npm:5.16.1"
+  dependencies:
+    graceful-fs: "npm:^4.2.4"
+    tapable: "npm:^2.2.0"
+  checksum: 10/1c44474437ec52d938ee0776d5883d5fec8fc645bccbebf6eb58229f3223c111bc1f5cb94222949a5a4565e7a2d7c34f03a0f7e97c10d6cd800e7a46c95e3aec
+  languageName: node
+  linkType: hard
+
 "enhanced-resolve@npm:^5.12.0":
   version: 5.13.0
   resolution: "enhanced-resolve@npm:5.13.0"
@@ -10397,6 +10414,7 @@ __metadata:
     expo-constants: "npm:~14.4.2"
     expo-dev-client: "npm:~2.4.12"
     expo-font: "npm:~11.4.0"
+    expo-image: "npm:^1.12.9"
     expo-linear-gradient: "npm:~12.3.0"
     expo-linking: "npm:~5.0.2"
     expo-router: "npm:^2.0.0"
@@ -10540,6 +10558,17 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 10/958d3fd00a551533a65fc483454f4a5a310c834f815c025bdf0eae3b32de505691f25479aad0209077595c82bd9b586e33e1d28097b8f8d427e81c4a03e8c0eb
+  languageName: node
+  linkType: hard
+
+"expo-image@npm:^1.12.9":
+  version: 1.12.9
+  resolution: "expo-image@npm:1.12.9"
+  dependencies:
+    "@react-native/assets-registry": "npm:~0.74.83"
+  peerDependencies:
+    expo: "*"
+  checksum: 10/773434c345ad3332b4d9a815607d097a356a4dac7c5292014326e5b0dadf287fc7ccf97525cdd50702c4cbb43051c86edb4aa99a83ec87f20d434ce46a5a2d8d
   languageName: node
   linkType: hard
 
@@ -14962,6 +14991,8 @@ __metadata:
     app: "npm:0.0.0"
     eslint-config-next: "npm:^13.0.4"
     next: "npm:^13.5.2"
+    next-compose-plugins: "npm:^2.2.1"
+    next-transpile-modules: "npm:^10.0.1"
     raf: "npm:^3.4.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -14972,6 +15003,22 @@ __metadata:
     vercel: "npm:latest"
   languageName: unknown
   linkType: soft
+
+"next-compose-plugins@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "next-compose-plugins@npm:2.2.1"
+  checksum: 10/e3c8b26617534d5eee06338c5d17779af1775830174e3640a56dc63ffcedfd6260c9dc0638b6d83ea24349c06cffe19b09b0831227ec0009f3f580332d0129a8
+  languageName: node
+  linkType: hard
+
+"next-transpile-modules@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "next-transpile-modules@npm:10.0.1"
+  dependencies:
+    enhanced-resolve: "npm:^5.10.0"
+  checksum: 10/ba8f8baef3d5657e0cc097f7102cd7acd62e593cdeed5fe77772de75915e3e9e28074a285e2214c652ee025b50fd5592493f384d1fb7bc82523777174e06ce1c
+  languageName: node
+  linkType: hard
 
 "next@npm:^13.5.2":
   version: 13.5.2
