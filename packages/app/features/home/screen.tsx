@@ -6,12 +6,17 @@ import {
   Separator,
   Sheet,
   useToastController,
+  CustomToast,
+  ToastViewport,
   XStack,
   YStack,
 } from '@my/ui'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
-import { useLink } from 'solito/link'
+// if using app router
+import { useLink } from 'solito/navigation'
+// if using pages router
+// import { useLink } from 'solito/link'
 
 export function HomeScreen() {
   const linkProps = useLink({
@@ -49,15 +54,20 @@ export function HomeScreen() {
         <Button {...linkProps}>Link to user</Button>
       </XStack>
 
+      {/* remove next two lines if using pages router */}
+      {/* <CustomToast />
+      <ToastViewport left={0} right={0} top={10} /> */}
+
       <SheetDemo />
     </YStack>
   )
 }
 
 function SheetDemo() {
+  const toast = useToastController()
+
   const [open, setOpen] = useState(false)
   const [position, setPosition] = useState(0)
-  const toast = useToastController()
 
   return (
     <>
