@@ -12,6 +12,7 @@ import {
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
 import { useLink } from 'solito/link'
+import { NavBar } from '@my/ui/src/components/NavBar'
 
 export function HomeScreen() {
   const linkProps = useLink({
@@ -21,6 +22,7 @@ export function HomeScreen() {
   return (
     <YStack f={1} jc="center" ai="center" p="$4" gap="$4">
       <YStack gap="$4" bc="$background">
+        <NavBar />
         <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
           Here's a basic starter to show navigating from one screen to another. This screen uses the
