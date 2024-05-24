@@ -8,6 +8,7 @@ import { useServerInsertedHTML } from 'next/navigation'
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { config, TamaguiProvider as TamaguiProviderOG, ToastProvider } from '@my/ui'
+import Head from 'next/head'
 
 export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useRootTheme()
@@ -47,6 +48,14 @@ export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => 
         setTheme(next as any)
       }}
     >
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            // avoid flash of animated things on enter:
+            __html: `document.documentElement.classList.add('t_unmounted')`,
+          }}
+        />
+      </Head>
       <TamaguiProviderOG config={config} themeClassNameOnRoot defaultTheme={theme}>
         <ToastProvider
           swipeDirection="horizontal"

@@ -7,6 +7,7 @@ import {
   Sheet,
   useToastController,
   CustomToast,
+  SwitchThemeButton,
   ToastViewport,
   XStack,
   YStack,
@@ -24,8 +25,8 @@ export function HomeScreen() {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" gap="$4">
-      <YStack gap="$4" bc="$background">
+    <YStack f={1} jc="center" ai="center" p="$4" gap="$4" bg="$background">
+      <YStack gap="$4">
         <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
           Here's a basic starter to show navigating from one screen to another. This screen uses the
@@ -49,6 +50,8 @@ export function HomeScreen() {
           </Anchor>
         </Paragraph>
       </YStack>
+
+      <SwitchThemeButton />
 
       <XStack>
         <Button {...linkProps}>Link to user</Button>
@@ -88,7 +91,7 @@ function SheetDemo() {
         dismissOnSnapToBottom
       >
         <Sheet.Overlay animation="lazy" enterStyle={{ opacity: 0 }} exitStyle={{ opacity: 0 }} />
-        <Sheet.Frame ai="center" jc="center">
+        <Sheet.Frame ai="center" jc="center" bg="$color2">
           <Sheet.Handle />
           <Button
             size="$6"
