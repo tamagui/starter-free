@@ -6,6 +6,9 @@ import {
   Separator,
   Sheet,
   useToastController,
+  CustomToast,
+  SwitchThemeButton,
+  ToastViewport,
   XStack,
   YStack,
 } from '@my/ui'
@@ -21,8 +24,8 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" gap="$4">
-      <YStack gap="$4" bc="$background">
+    <YStack f={1} jc="center" ai="center" p="$4" gap="$4" bg="$background">
+      <YStack gap="$4">
         <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
           Here's a basic starter to show navigating from one screen to another. This screen uses the
@@ -74,9 +77,15 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         </Paragraph>
       </YStack>
 
+      <SwitchThemeButton />
+
       <XStack>
         <Button {...linkProps}>Link to user</Button>
       </XStack>
+
+      {/* remove next two lines if using pages router */}
+      <CustomToast />
+      <ToastViewport left={0} right={0} top={10} />
 
       <SheetDemo />
     </YStack>
@@ -84,9 +93,10 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
 }
 
 function SheetDemo() {
+  const toast = useToastController()
+
   const [open, setOpen] = useState(false)
   const [position, setPosition] = useState(0)
-  const toast = useToastController()
 
   return (
     <>
@@ -107,7 +117,7 @@ function SheetDemo() {
         dismissOnSnapToBottom
       >
         <Sheet.Overlay animation="lazy" enterStyle={{ opacity: 0 }} exitStyle={{ opacity: 0 }} />
-        <Sheet.Frame ai="center" jc="center">
+        <Sheet.Frame ai="center" jc="center" bg="$color2">
           <Sheet.Handle />
           <Button
             size="$6"

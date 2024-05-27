@@ -8,7 +8,7 @@
       "@my/ui/*": ["./packages/ui/*"]
     }
   },
-  "extends": "tsconfig.base",
+  "extends": "./tsconfig.base",
   "exclude": [
     "**/node_modules",
     "**/dist",
