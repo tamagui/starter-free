@@ -1,14 +1,22 @@
 'use client'
 
 import '@tamagui/core/reset.css'
+import '@tamagui/font-inter/css/400.css'
+import '@tamagui/font-inter/css/700.css'
 import '@tamagui/polyfill-dev'
 
-import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
-import { useServerInsertedHTML } from 'next/navigation'
 import React from 'react'
 import { StyleSheet } from 'react-native'
-import { config, TamaguiProvider as TamaguiProviderOG, ToastProvider } from '@my/ui'
 import Head from 'next/head'
+import { useServerInsertedHTML } from 'next/navigation'
+import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
+import {
+  config,
+  CustomToast,
+  TamaguiProvider as TamaguiProviderOG,
+  ToastProvider,
+  ToastViewport,
+} from '@my/ui'
 
 export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useRootTheme()
@@ -68,6 +76,9 @@ export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => 
           }
         >
           {children}
+
+          <CustomToast />
+          <ToastViewport left={0} right={0} top={10} />
         </ToastProvider>
       </TamaguiProviderOG>
     </NextThemeProvider>

@@ -6,9 +6,8 @@ import {
   Separator,
   Sheet,
   useToastController,
-  CustomToast,
   SwitchThemeButton,
-  ToastViewport,
+  SwitchRouterButton,
   XStack,
   YStack,
 } from '@my/ui'
@@ -24,69 +23,33 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" gap="$4" bg="$background">
+    <YStack f={1} jc="center" ai="center" gap="$8" p="$4" bg="$background">
+      <XStack
+        pos="absolute"
+        w="100%"
+        t="$6"
+        gap="$6"
+        jc="center"
+        fw="wrap"
+        $sm={{ pos: 'relative', t: 0 }}
+      >
+        {Platform.OS === 'web' && <SwitchRouterButton pagesMode={pagesMode} />}
+        <SwitchThemeButton />
+      </XStack>
+
       <YStack gap="$4">
         <H1 ta="center">Welcome to Tamagui.</H1>
-        <Paragraph ta="center">
-          Here's a basic starter to show navigating from one screen to another. This screen uses the
-          same code on Next.js and React Native.
+        <Paragraph col="$color10" ta="center">
+          Here's a basic starter to show navigating from one screen to another.
         </Paragraph>
         <Separator />
         <Paragraph ta="center">
           This screen uses the same code on Next.js and React Native.
         </Paragraph>
-        <>
-          {Platform.OS === 'web' && pagesMode ? (
-            <>
-              <Separator />
-              <Paragraph ta="center">
-                Note this page is using the <code>Next.js Pages Router</code> mode.
-              </Paragraph>
-              <Anchor ta="center" color="$color12" href="/">
-                Go to the app router example
-              </Anchor>
-            </>
-          ) : null}
-          {Platform.OS === 'web' && !pagesMode ? (
-            <>
-              <Separator />
-              <Paragraph ta="center">
-                Note this page is using the <code>Next.js App Router</code> mode.
-              </Paragraph>
-              <Anchor ta="center" color="$color12" href="/pages-example">
-                Go to the pages router example
-              </Anchor>
-            </>
-          ) : null}
-        </>
         <Separator />
-        <Paragraph ta="center">
-          Made by{' '}
-          <Anchor color="$color12" href="https://twitter.com/natebirdman" target="_blank">
-            @natebirdman
-          </Anchor>
-          ,{' '}
-          <Anchor
-            color="$color12"
-            href="https://github.com/tamagui/tamagui"
-            target="_blank"
-            rel="noreferrer"
-          >
-            give it a ⭐️
-          </Anchor>
-        </Paragraph>
       </YStack>
 
-      <SwitchThemeButton />
-
-      <XStack>
-        <Button {...linkProps}>Link to user</Button>
-      </XStack>
-
-      {/* remove next two lines if using pages router */}
-      <CustomToast />
-      <ToastViewport left={0} right={0} top={10} />
-
+      <Button {...linkProps}>Link to user</Button>
       <SheetDemo />
     </YStack>
   )
@@ -117,20 +80,33 @@ function SheetDemo() {
         dismissOnSnapToBottom
       >
         <Sheet.Overlay animation="lazy" enterStyle={{ opacity: 0 }} exitStyle={{ opacity: 0 }} />
-        <Sheet.Frame ai="center" jc="center" bg="$color2">
-          <Sheet.Handle />
+        <Sheet.Handle />
+        <Sheet.Frame ai="center" jc="center" gap="$10" bg="$color2">
+          <Paragraph ta="center">
+            Made by{' '}
+            <Anchor color="$color12" href="https://twitter.com/natebirdman" target="_blank">
+              @natebirdman
+            </Anchor>
+            ,{' '}
+            <Anchor
+              color="$color12"
+              href="https://github.com/tamagui/tamagui"
+              target="_blank"
+              rel="noreferrer"
+            >
+              give it a ⭐️
+            </Anchor>
+          </Paragraph>
+
           <Button
             size="$6"
             circular
             icon={ChevronDown}
             onPress={() => {
               setOpen(false)
-              // Custom Toast only works on Expo
-              if (Platform.OS !== 'web') {
-                toast.show('Sheet closed!', {
-                  message: 'Just showing how toast works...',
-                })
-              }
+              toast.show('Sheet closed!', {
+                message: 'Just showing how toast works...',
+              })
             }}
           />
         </Sheet.Frame>

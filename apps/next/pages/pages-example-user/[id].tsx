@@ -6,6 +6,7 @@ const { useParam } = createParam<{ id: string }>()
 
 export default function Page() {
   const [id] = useParam('id')
+
   return (
     <>
       <Head>
