@@ -80,7 +80,7 @@ function SheetDemo() {
         dismissOnSnapToBottom
       >
         <Sheet.Overlay animation="lazy" enterStyle={{ opacity: 0 }} exitStyle={{ opacity: 0 }} />
-        <Sheet.Handle />
+        <Sheet.Handle bg="$gray8" />
         <Sheet.Frame ai="center" jc="center" gap="$10" bg="$color2">
           <Paragraph ta="center">
             Made by{' '}

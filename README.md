@@ -36,8 +36,11 @@ You can add other folders inside of `packages/` if you know what you're doing an
 > [!TIP]
 > Switching from `app` to `pages` router:
 >
-> - delete `app` folder and rename `pages-demo` to `pages`
-> - search for `app router` and `pages router` keywords and follow the instructions
+> - remove `app` folder from `apps/next`
+> - move `index.tsx` from `pages-example` to `pages` folder
+> - rename `pages-example-user` and be sure to update `linkTarget` in `screen.tsx` as well
+> - delete `SwitchRouterButton.tsx` component and remove it from `screen.tsx` and `packages/ui/src/index.tsx`
+> - search for `pagesMode` keyword and remove it
 
 ## 🏁 Start the app
 
