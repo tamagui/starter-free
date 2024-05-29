@@ -45,6 +45,12 @@ export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => 
             }),
           }}
         />
+
+        <style jsx global>{`
+          html {
+            font-family: 'Inter';
+          }
+        `}</style>
       </>
     )
   })

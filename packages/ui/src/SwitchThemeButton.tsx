@@ -4,10 +4,10 @@ import { useState } from 'react'
 
 export const SwitchThemeButton = () => {
   const themeSetting = useThemeSetting()
-  const [clientTheme, setClientTheme] = useState<string>('light')
+  const [clientTheme, setClientTheme] = useState<string>('dark')
 
   useIsomorphicLayoutEffect(() => {
-    setClientTheme(themeSetting.current || 'light')
+    setClientTheme(themeSetting.current || 'dark')
   }, [themeSetting.current, themeSetting.resolvedTheme])
 
   return <Button onPress={themeSetting.toggle}>Change theme: {clientTheme}</Button>

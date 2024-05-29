@@ -10,37 +10,37 @@
     "eject": "npx expo eject"
   },
   "dependencies": {
-    "@babel/runtime": "^7.24.4",
-    "@expo/config-plugins": "~7.9.1",
+    "@babel/runtime": "^7.24.6",
+    "@expo/config-plugins": "~7.9.2",
     "@my/ui": "0.0.1",
     "@react-navigation/native": "^6.1.17",
     "app": "0.0.0",
     "babel-plugin-module-resolver": "^5.0.2",
     "burnt": "^0.12.2",
-    "expo": "^50.0.17",
-    "expo-constants": "~15.4.6",
-    "expo-dev-client": "~3.3.11",
-    "expo-font": "~11.10.3",
-    "expo-linear-gradient": "~12.7.2",
-    "expo-linking": "~6.2.2",
-    "expo-router": "3.5.3",
-    "expo-splash-screen": "0.26.5",
-    "expo-status-bar": "~1.11.1",
-    "expo-updates": "~0.24.12",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native": "0.74.0",
-    "react-native-gesture-handler": "~2.16.0",
+    "expo": "^51.0.8",
+    "expo-constants": "~16.0.1",
+    "expo-dev-client": "~4.0.14",
+    "expo-font": "~12.0.5",
+    "expo-linear-gradient": "~13.0.2",
+    "expo-linking": "~6.3.1",
+    "expo-router": "3.5.14",
+    "expo-splash-screen": "0.27.4",
+    "expo-status-bar": "~1.12.1",
+    "expo-updates": "~0.25.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native": "0.74.1",
+    "react-native-gesture-handler": "~2.16.2",
     "react-native-safe-area-context": "4.10.1",
     "react-native-screens": "~3.31.1",
-    "react-native-svg": "15.2.0",
-    "react-native-web": "~0.19.11"
+    "react-native-svg": "15.3.0",
+    "react-native-web": "~0.19.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@expo/metro-config": "~0.17.7",
+    "@babel/core": "^7.24.6",
+    "@expo/metro-config": "~0.18.4",
     "@tamagui/babel-plugin": "^1.99.1",
-    "metro-minify-terser": "^0.80.8",
+    "metro-minify-terser": "^0.80.9",
     "typescript": "^5.4.5"
   },
   "resolutions": {
@@ -48,7 +48,7 @@
     "metro-resolver": "0.76.0"
   },
   "overrides": {
-    "metro": "0.76.0",
-    "metro-resolver": "0.76.0"
+    "metro": "0.80.9",
+    "metro-resolver": "0.80.9"
   }
 }

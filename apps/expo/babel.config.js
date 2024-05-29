@@ -25,6 +25,8 @@ module.exports = function (api) {
               {
                 components: ['@my/ui', 'tamagui'],
                 config: '../../packages/config/src/tamagui.config.ts',
+                logTimings: true,
+                disableExtraction: process.env.NODE_ENV === 'development',
               },
             ],
           ]),
