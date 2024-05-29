@@ -1,7 +1,10 @@
 import { UserDetailScreen } from 'app/features/user/detail-screen'
 import { Stack } from 'expo-router'
+import { useParams } from 'solito/navigation'
 
 export default function Screen() {
+  const { id } = useParams()
+
   return (
     <>
       <Stack.Screen
@@ -9,7 +12,7 @@ export default function Screen() {
           title: 'User',
         }}
       />
-      <UserDetailScreen />
+      <UserDetailScreen id={id as string} />
     </>
   )
 }
