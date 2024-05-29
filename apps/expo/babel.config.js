@@ -1,9 +1,8 @@
 module.exports = function (api) {
-  api.cache(true);
+  api.cache(true)
   return {
     presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
     plugins: [
-      require.resolve('expo-router/babel'),
       [
         require.resolve('babel-plugin-module-resolver'),
         {
@@ -26,9 +25,11 @@ module.exports = function (api) {
               {
                 components: ['@my/ui', 'tamagui'],
                 config: '../../packages/config/src/tamagui.config.ts',
+                logTimings: true,
+                disableExtraction: process.env.NODE_ENV === 'development',
               },
             ],
           ]),
     ],
-  };
-};
+  }
+}

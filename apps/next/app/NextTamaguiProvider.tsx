@@ -1,16 +1,18 @@
 'use client'
 
 import '@tamagui/core/reset.css'
+import '@tamagui/font-inter/css/400.css'
+import '@tamagui/font-inter/css/700.css'
 import '@tamagui/polyfill-dev'
 
-import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
-import { useServerInsertedHTML } from 'next/navigation'
-import React from 'react'
+import { ReactNode } from 'react'
 import { StyleSheet } from 'react-native'
-import { config, TamaguiProvider as TamaguiProviderOG, ToastProvider } from '@my/ui'
-import Head from 'next/head'
+import { useServerInsertedHTML } from 'next/navigation'
+import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
+import { config } from '@my/ui'
+import { Provider } from 'app/provider'
 
-export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => {
+export const NextTamaguiProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useRootTheme()
 
   useServerInsertedHTML(() => {
@@ -37,6 +39,19 @@ export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => 
             }),
           }}
         />
+
+        <script
+          dangerouslySetInnerHTML={{
+            // avoid flash of animated things on enter:
+            __html: `document.documentElement.classList.add('t_unmounted')`,
+          }}
+        />
+
+        <style jsx global>{`
+          html {
+            font-family: 'Inter';
+          }
+        `}</style>
       </>
     )
   })
@@ -44,32 +59,15 @@ export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => 
   return (
     <NextThemeProvider
       skipNextHead
+      // change default theme (system) here:
+      // defaultTheme="light"
       onChangeTheme={(next) => {
         setTheme(next as any)
       }}
     >
-      <Head>
-        <script
-          dangerouslySetInnerHTML={{
-            // avoid flash of animated things on enter:
-            __html: `document.documentElement.classList.add('t_unmounted')`,
-          }}
-        />
-      </Head>
-      <TamaguiProviderOG config={config} themeClassNameOnRoot defaultTheme={theme}>
-        <ToastProvider
-          swipeDirection="horizontal"
-          duration={6000}
-          native={
-            [
-              /* uncomment the next line to do native toasts on mobile. NOTE: it'll require you making a dev build and won't work with Expo Go */
-              // 'mobile'
-            ]
-          }
-        >
-          {children}
-        </ToastProvider>
-      </TamaguiProviderOG>
+      <Provider disableRootThemeClass defaultTheme={theme}>
+        {children}
+      </Provider>
     </NextThemeProvider>
   )
 }
