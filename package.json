@@ -21,11 +21,11 @@
     "check-deps": "check-dependency-version-consistency ."
   },
   "resolutions": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-refresh": "^0.14.0",
-    "react-native-svg": "13.9.0",
-    "react-native-web": "~0.19.6"
+    "react-native-svg": "15.3.0",
+    "react-native-web": "~0.19.12"
   },
   "dependencies": {
     "@babel/runtime": "^7.24.6",
