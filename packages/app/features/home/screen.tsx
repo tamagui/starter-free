@@ -33,8 +33,12 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         fw="wrap"
         $sm={{ pos: 'relative', t: 0 }}
       >
-        {Platform.OS === 'web' && <SwitchRouterButton pagesMode={pagesMode} />}
-        <SwitchThemeButton />
+        {Platform.OS === 'web' && (
+          <>
+            <SwitchRouterButton pagesMode={pagesMode} />
+            <SwitchThemeButton />
+          </>
+        )}
       </XStack>
 
       <YStack gap="$4">
@@ -50,6 +54,7 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
       </YStack>
 
       <Button {...linkProps}>Link to user</Button>
+
       <SheetDemo />
     </YStack>
   )

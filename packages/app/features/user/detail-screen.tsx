@@ -1,9 +1,10 @@
 import { Button, Paragraph, YStack } from '@my/ui'
 import { ChevronLeft } from '@tamagui/lucide-icons'
-import { useRouter } from 'solito/navigation'
+import { useParams, useRouter } from 'solito/navigation'
 
-export function UserDetailScreen({ id }: { id: string }) {
+export function UserDetailScreen() {
   const router = useRouter()
+  const { id } = useParams()
 
   return (
     <YStack f={1} jc="center" ai="center" gap="$4">

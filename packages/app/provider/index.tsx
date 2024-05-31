@@ -1,6 +1,7 @@
 import { useColorScheme } from 'react-native'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider, config } from '@my/ui'
 import { ToastViewport } from './ToastViewport'
+import { NavigationProvider } from './navigation'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   const scheme = useColorScheme()
@@ -16,10 +17,11 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
           ]
         }
       >
-        {children}
-
-        <CustomToast />
-        <ToastViewport />
+        <NavigationProvider>
+          {children}
+          <CustomToast />
+          <ToastViewport />
+        </NavigationProvider>
       </ToastProvider>
     </TamaguiProvider>
   )
