@@ -3006,7 +3006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/native-stack@npm:^6.9.26, @react-navigation/native-stack@npm:~6.9.12":
+"@react-navigation/native-stack@npm:~6.9.12":
   version: 6.9.26
   resolution: "@react-navigation/native-stack@npm:6.9.26"
   dependencies:
@@ -5663,7 +5663,6 @@ __metadata:
   dependencies:
     "@my/ui": "npm:0.0.1"
     "@react-navigation/native": "npm:^6.1.17"
-    "@react-navigation/native-stack": "npm:^6.9.26"
     "@tamagui/animations-react-native": "npm:^1.99.1"
     "@tamagui/colors": "npm:^1.99.1"
     "@tamagui/font-inter": "npm:^1.99.1"

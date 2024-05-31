@@ -11,7 +11,7 @@ import {
   XStack,
   YStack,
 } from '@my/ui'
-import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
+import { ChevronDown, ChevronUp, X } from '@tamagui/lucide-icons'
 import { useState } from 'react'
 import { Platform } from 'react-native'
 import { useLink } from 'solito/navigation'
@@ -87,21 +87,15 @@ function SheetDemo() {
         <Sheet.Overlay animation="lazy" enterStyle={{ opacity: 0 }} exitStyle={{ opacity: 0 }} />
         <Sheet.Handle bg="$gray8" />
         <Sheet.Frame ai="center" jc="center" gap="$10" bg="$color2">
-          <Paragraph ta="center">
-            Made by{' '}
-            <Anchor color="$color12" href="https://twitter.com/natebirdman" target="_blank">
-              @natebirdman
+          <XStack gap="$2">
+            <Paragraph ta="center">Made by</Paragraph>
+            <Anchor col="$purple10" href="https://twitter.com/natebirdman" target="_blank">
+              @natebirdman,
             </Anchor>
-            ,{' '}
-            <Anchor
-              color="$color12"
-              href="https://github.com/tamagui/tamagui"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Anchor href="https://github.com/tamagui/tamagui" target="_blank" rel="noreferrer">
               give it a ⭐️
             </Anchor>
-          </Paragraph>
+          </XStack>
 
           <Button
             size="$6"
