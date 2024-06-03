@@ -14,7 +14,7 @@ export default function Screen() {
           animation: 'slide_from_right',
           gestureEnabled: true,
           gestureDirection: 'horizontal',
-          headerTintColor: theme.color.val,
+          headerTintColor: theme.color1.val,
           headerStyle: { backgroundColor: theme.blue9.val },
         }}
       />

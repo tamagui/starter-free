@@ -4,6 +4,7 @@ import { ToastViewport } from './ToastViewport'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   const scheme = useColorScheme()
+  
   return (
     <TamaguiProvider config={config} defaultTheme={scheme === 'dark' ? 'dark' : 'light'} {...rest}>
       <ToastProvider

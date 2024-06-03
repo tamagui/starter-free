@@ -42,7 +42,9 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
       </XStack>
 
       <YStack gap="$4">
-        <H1 ta="center">Welcome to Tamagui.</H1>
+        <H1 ta="center" col="$color12">
+          Welcome to Tamagui.
+        </H1>
         <Paragraph col="$color10" ta="center">
           Here's a basic starter to show navigating from one screen to another.
         </Paragraph>
@@ -89,10 +91,15 @@ function SheetDemo() {
         <Sheet.Frame ai="center" jc="center" gap="$10" bg="$color2">
           <XStack gap="$2">
             <Paragraph ta="center">Made by</Paragraph>
-            <Anchor col="$purple10" href="https://twitter.com/natebirdman" target="_blank">
+            <Anchor col="$blue10" href="https://twitter.com/natebirdman" target="_blank">
               @natebirdman,
             </Anchor>
-            <Anchor href="https://github.com/tamagui/tamagui" target="_blank" rel="noreferrer">
+            <Anchor
+              color="$purple10"
+              href="https://github.com/tamagui/tamagui"
+              target="_blank"
+              rel="noreferrer"
+            >
               give it a ⭐️
             </Anchor>
           </XStack>
