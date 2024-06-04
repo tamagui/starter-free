@@ -3,10 +3,10 @@ import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider, conf
 import { ToastViewport } from './ToastViewport'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
-  const scheme = useColorScheme()
+  const colorScheme = useColorScheme()
   
   return (
-    <TamaguiProvider config={config} defaultTheme={scheme === 'dark' ? 'dark' : 'light'} {...rest}>
+    <TamaguiProvider config={config} defaultTheme={colorScheme === 'dark' ? 'dark' : 'light'} {...rest}>
       <ToastProvider
         swipeDirection="horizontal"
         duration={6000}

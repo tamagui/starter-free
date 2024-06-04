@@ -38,9 +38,7 @@ function RootLayoutNav() {
   const colorScheme = useColorScheme()
 
   return (
-    // to use light theme, add `defaultTheme="light"` to Provider
     <Provider>
-      {/* to use light theme, replace value with `DefaultTheme` */}
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack />
         <NativeToast />
