@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
     "paths": {

@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.base",
   "include": ["**/*.ts", "**/*.tsx"],
   "compilerOptions": {
+    "esModuleInterop": true,
     "composite": true,
     "jsx": "react-jsx"
   },
