@@ -37,5 +37,8 @@
     "turbo": "^1.10.3",
     "typescript": "^5.3.3"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.1.0",
+  "devDependencies": {
+    "eslint-config-prettier": "^9.1.0"
+  }
 }
