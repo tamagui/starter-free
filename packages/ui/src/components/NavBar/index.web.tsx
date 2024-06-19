@@ -4,9 +4,31 @@ import { SolitoImage as Image } from 'solito/image'
 
 export const NavBar: React.FC = () => {
   return (
-    <XStack gap={"$5"} marginLeft={60} alignItems='center' marginTop={40} >
-      <Image src={"https://cdn.discordapp.com/attachments/1219854791254081649/1247730507043705003/image.png?ex=66611716&is=665fc596&hm=5fcd694796a0ee28abcaca6ac1ed13ba4d08bf97bfdc157e265fa087c270c0f8&"} alt={"sapa"} height={100} width={100} contentFit="fill" unoptimized />
-      <Text fontSize={"$9"} textAlign='center'>HOME | SEARCH | MANGA LIST </Text>
+    <XStack
+      marginLeft={60}
+      marginTop={30}
+      alignItems="center"
+      width={'95%'}
+      justifyContent="space-between"
+    >
+      <XStack alignItems="center" gap={'$5'}>
+        <Image
+          src={
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCMd_DXbWYISW6hO57pSpCntDtZy1Foly2A&s'
+          }
+          alt={'sapa'}
+          height={100}
+          width={100}
+          contentFit="fill"
+          unoptimized
+        />
+        <Text fontSize={'$9'} textAlign="center">
+          HOME | SEARCH | MANGA LIST
+        </Text>
+      </XStack>
+      <Text fontSize={24} color={'#FF204E'}>
+        Hi, Pablo Peñaranda
+      </Text>
     </XStack>
   )
 }
