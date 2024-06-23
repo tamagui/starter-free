@@ -16,14 +16,14 @@
     "watch": "tamagui-build --skip-types --watch"
   },
   "dependencies": {
-    "@tamagui/animations-react-native": "1.100.6",
-    "@tamagui/font-inter": "^1.101.0",
-    "@tamagui/react-native-media-driver": "^1.101.0",
-    "@tamagui/shorthands": "^1.101.0",
-    "@tamagui/themes": "^1.101.0",
-    "tamagui": "^1.101.0"
+    "@tamagui/animations-react-native": "^1.101.1",
+    "@tamagui/font-inter": "^1.101.1",
+    "@tamagui/react-native-media-driver": "^1.101.1",
+    "@tamagui/shorthands": "^1.101.1",
+    "@tamagui/themes": "^1.101.1",
+    "tamagui": "^1.101.1"
   },
   "devDependencies": {
-    "@tamagui/build": "^1.101.0"
+    "@tamagui/build": "^1.101.1"
   }
 }
