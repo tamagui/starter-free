@@ -1,0 +1,19 @@
+# Ignore artifacts:
+build
+coverage
+
+# Ignore all HTML files:
+**/*.html
+
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+**/.next
+**/.tamagui
+**/.yarn
+**/.expo
+**/dist/**
+**/public/**
