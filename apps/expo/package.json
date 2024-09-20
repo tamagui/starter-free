@@ -6,8 +6,9 @@
   "scripts": {
     "start": "npx expo start -c",
     "android": "npx expo run:android",
-    "ios": "npx expo run:ios",
-    "eject": "npx expo eject"
+    "ios": "yarn fix-xcode-env && npx expo run:ios",
+    "eject": "npx expo eject",
+    "fix-xcode-env": "node scripts/fix-xcode-env.mjs"
   },
   "dependencies": {
     "@babel/runtime": "^7.24.6",
