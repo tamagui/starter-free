@@ -1,9 +1,10 @@
 import { spawn } from 'child_process'
 import { expect, test } from 'vitest'
+import path from 'node:path'
 
-test('Next.js dev server starts successfully', async () => {
+test('Next.js dev server starts', async () => {
   const devProcess = spawn('yarn', ['dev'], {
-    cwd: process.cwd(),
+    cwd: path.resolve(__dirname, '..'),
     stdio: 'pipe',
     shell: true,
   })

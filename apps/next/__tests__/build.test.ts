@@ -1,10 +1,11 @@
 import { execSync } from 'child_process'
 import { expect, test } from 'vitest'
+import path from 'node:path'
 
-test('Next.js build completes successfully', () => {
+test('Next.js build completes', () => {
   const buildOutput = execSync('yarn build', {
     encoding: 'utf-8',
-    cwd: process.cwd(),
+    cwd: path.resolve(__dirname, '..'),
   })
 
   // Check for yarn build output
@@ -24,11 +25,20 @@ test('Next.js build completes successfully', () => {
   expect(buildOutput).toContain('Route (pages)')
   expect(buildOutput).toContain('First Load JS shared by all')
 
+  // Check for specific route patterns
+  expect(buildOutput).toContain('○ /')
+  expect(buildOutput).toContain('○ /_not-found')
+  expect(buildOutput).toContain('ƒ /user/[id]')
+  expect(buildOutput).toContain('/_app')
+  expect(buildOutput).toContain('/pages-example')
+  expect(buildOutput).toContain('/pages-example-user/[id]')
+
+  // Check for chunk information
+  expect(buildOutput).toContain('chunks/framework-')
+  expect(buildOutput).toContain('chunks/main-')
+  expect(buildOutput).toContain('chunks/pages/_app-')
+
   // Check for static and dynamic route indicators
   expect(buildOutput).toContain('○  (Static)   prerendered as static content')
-  expect(buildOutput).toContain('λ  (Dynamic)  server-rendered on demand using Node.js')
-
-  // Check for build completion
-  expect(buildOutput).toContain('Compiled successfully')
-  expect(buildOutput).toContain('Done in')
+  expect(buildOutput).toContain('ƒ  (Dynamic)  server-rendered on demand')
 })
