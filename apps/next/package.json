@@ -7,7 +7,8 @@
     "build": "cd ../.. && yarn build && cd apps/next && next build",
     "start": "next start",
     "serve": "NODE_ENV=production next start --port 8151",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest"
   },
   "dependencies": {
     "@tamagui/config": "^1.111.11",
@@ -28,6 +29,7 @@
     "@types/node": "^20.14.1",
     "eslint-config-next": "^14.2.3",
     "next-compose-plugins": "^2.2.1",
-    "next-transpile-modules": "^10.0.1"
+    "next-transpile-modules": "^10.0.1",
+    "vitest": "^2.1.1"
   }
 }
