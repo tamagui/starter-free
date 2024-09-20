@@ -1,10 +1,17 @@
 import { spawn } from 'child_process'
 import { expect, test } from 'vitest'
+<<<<<<< HEAD
 import path from 'node:path'
 
 test('Next.js dev server starts', async () => {
   const devProcess = spawn('yarn', ['dev'], {
     cwd: path.resolve(__dirname, '..'),
+=======
+
+test('Next.js dev server starts successfully', async () => {
+  const devProcess = spawn('yarn', ['dev'], {
+    cwd: process.cwd(),
+>>>>>>> 95aae9a (test: Update free-starter next steps tests)
     stdio: 'pipe',
     shell: true,
   })
