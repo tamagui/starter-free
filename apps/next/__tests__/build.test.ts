@@ -1,10 +1,11 @@
 import { execSync } from 'child_process'
 import { expect, test } from 'vitest'
+import path from 'node:path'
 
-test('Next.js build completes successfully', () => {
+test('Next.js build completes', () => {
   const buildOutput = execSync('yarn build', {
     encoding: 'utf-8',
-    cwd: process.cwd(),
+    cwd: path.resolve(__dirname, '..'),
   })
 
   // Check for yarn build output
