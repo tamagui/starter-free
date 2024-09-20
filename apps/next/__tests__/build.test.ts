@@ -2,8 +2,9 @@ import { execSync } from 'child_process'
 import { expect, test } from 'vitest'
 
 test('Next.js build completes successfully', () => {
-  const buildOutput = execSync('cd ../.. && yarn build && cd apps/next && next build', {
+  const buildOutput = execSync('yarn build', {
     encoding: 'utf-8',
+    cwd: process.cwd(),
   })
 
   // Check for yarn build output
