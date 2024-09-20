@@ -18,7 +18,8 @@
     "build": "yarn workspaces foreach --all --exclude next-app run build",
     "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest react-native-web-lite@latest",
     "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary react-native-web-lite@canary",
-    "check-deps": "check-dependency-version-consistency ."
+    "check-deps": "check-dependency-version-consistency .",
+    "test": "vitest"
   },
   "resolutions": {
     "react": "^18.3.1",
@@ -33,9 +34,16 @@
     "check-dependency-version-consistency": "^4.1.0",
     "eslint": "^9.3.0",
     "node-gyp": "^10.1.0",
-    "prettier": "^3.2.5",
-    "turbo": "^1.13.3",
-    "typescript": "^5.4.5"
+    "prettier": "^3.3.3",
+    "turbo": "^1.13.4",
+    "typescript": "^5.6.2"
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@4.5.0",
+  "engines": {
+    "node": "22",
+    "npm": "10.8"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.1"
+  }
 }
