@@ -11,7 +11,7 @@
     "@react-navigation/native": "^6.1.17",
     "@tamagui/animations-react-native": "^1.111.12",
     "@tamagui/colors": "^1.111.12",
-    "@tamagui/font-inter": "1.111.11",
+    "@tamagui/font-inter": "^1.111.12",
     "@tamagui/lucide-icons": "^1.111.12",
     "@tamagui/shorthands": "^1.111.12",
     "@tamagui/themes": "^1.111.12",
