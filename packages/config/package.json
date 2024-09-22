@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@tamagui/animations-react-native": "^1.111.12",
-    "@tamagui/font-inter": "1.111.11",
+    "@tamagui/font-inter": "^1.111.12",
     "@tamagui/react-native-media-driver": "^1.111.12",
     "@tamagui/shorthands": "^1.111.12",
     "@tamagui/themes": "^1.111.12",
