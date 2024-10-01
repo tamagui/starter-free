@@ -1,11 +1,6 @@
 {
   "extends": "../../tsconfig.base",
-  "include": [
-    "app/**/*.ts",
-    "app/**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ],
+  "include": ["app/**/*.ts", "app/**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
   "compilerOptions": {
     "composite": true,
     "jsx": "react-jsx"

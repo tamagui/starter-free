@@ -1,4 +1,6 @@
 dist
+io
+android
 
 **/node_modules
 .yarn/*

@@ -3,7 +3,7 @@ import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
 import 'raf/polyfill'
 
-import React from 'react'
+import type React from 'react'
 import Head from 'next/head'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import type { SolitoAppProps } from 'solito'

@@ -3,9 +3,7 @@
   "name": "app",
   "main": "index.ts",
   "private": true,
-  "sideEffects": [
-    "*.css"
-  ],
+  "sideEffects": ["*.css"],
   "dependencies": {
     "@my/ui": "0.0.1",
     "@react-navigation/native": "^6.1.17",

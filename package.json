@@ -1,10 +1,7 @@
 {
   "name": "starter-free",
   "private": true,
-  "workspaces": [
-    "./apps/*",
-    "./packages/*"
-  ],
+  "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
     "native": "cd apps/expo && yarn start",
     "watch": "yarn workspaces foreach -pi run watch",

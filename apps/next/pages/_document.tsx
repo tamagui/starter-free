@@ -1,8 +1,8 @@
 import { Children } from 'react'
 import { AppRegistry } from 'react-native'
 import NextDocument, {
-  DocumentContext,
-  DocumentInitialProps,
+  type DocumentContext,
+  type DocumentInitialProps,
   Head,
   Html,
   Main,
@@ -32,7 +32,7 @@ export default class Document extends NextDocument {
           }),
         }}
       />,
-      <style jsx global>{`
+      <style jsx global key="basic-font-css">{`
         html {
           font-family: 'Inter';
         }

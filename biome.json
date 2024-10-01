@@ -10,7 +10,9 @@
       "**/*/generated-v2.ts",
       ".tamagui",
       ".codesandbox",
-      " .vscode"
+      ".vscode",
+      "tsconfig.json",
+      "tsconfig.base.json"
     ],
     "rules": {
       "correctness": {
@@ -79,7 +81,9 @@
       "**/*/generated-v2.ts",
       ".tamagui",
       ".codesandbox",
-      " .vscode"
+      ".vscode",
+      "tsconfig.json",
+      "tsconfig.base.json"
     ]
   },
   "vcs": {

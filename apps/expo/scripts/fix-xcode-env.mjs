@@ -1,7 +1,7 @@
-import fs from 'fs/promises'
-import path from 'path'
-import { fileURLToPath } from 'url'
-import { execSync } from 'child_process'
+import fs from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { execSync } from 'node:child_process'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -20,8 +20,6 @@ async function main() {
     // Create or update the .xcode.env.local file
     const content = `export NODE_BINARY=${nodePath}\n`
     await fs.writeFile(xcodePath, content)
-
-    console.log(`Updated ${xcodePath} with Node path: ${nodePath}`)
   } catch (error) {
     console.error('Error:', error.message)
     process.exit(1)
