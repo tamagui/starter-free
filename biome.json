@@ -12,7 +12,8 @@
       ".codesandbox",
       ".vscode",
       "tsconfig.json",
-      "tsconfig.base.json"
+      "tsconfig.base.json",
+      "apps/expo/ios/**"
     ],
     "rules": {
       "correctness": {
@@ -83,13 +84,9 @@
       ".codesandbox",
       ".vscode",
       "tsconfig.json",
-      "tsconfig.base.json"
+      "tsconfig.base.json",
+      "apps/expo/ios/**"
     ]
-  },
-  "vcs": {
-    "clientKind": "git",
-    "enabled": true,
-    "useIgnoreFile": true
   },
   "javascript": {
     "formatter": {
@@ -98,5 +95,10 @@
       "semicolons": "asNeeded",
       "quoteStyle": "single"
     }
+  },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": true,
+    "useIgnoreFile": true
   }
 }
