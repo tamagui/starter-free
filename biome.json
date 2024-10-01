@@ -20,7 +20,8 @@
         "useExhaustiveDependencies": "off",
         "noInnerDeclarations": "off",
         "noUnnecessaryContinue": "off",
-        "noConstructorReturn": "off"
+        "noConstructorReturn": "off",
+        "noUnusedImports": "error"
       },
       "suspicious": {
         "noImplicitAnyLet": "off",
