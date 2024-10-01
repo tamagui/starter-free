@@ -68,6 +68,7 @@ export const config = createTamagui({
   },
   settings: {
     allowedStyleValues: 'somewhat-strict',
+    maxDarkLightNesting: 2,
   },
   themes,
   tokens,

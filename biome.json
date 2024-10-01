@@ -13,7 +13,8 @@
       ".vscode",
       "tsconfig.json",
       "tsconfig.base.json",
-      "apps/expo/ios/**"
+      "apps/expo/ios/**",
+      "**/tamagui.css"
     ],
     "rules": {
       "correctness": {
@@ -86,7 +87,8 @@
       ".vscode",
       "tsconfig.json",
       "tsconfig.base.json",
-      "apps/expo/ios/**"
+      "apps/expo/ios/**",
+      "**/tamagui.css"
     ]
   },
   "javascript": {

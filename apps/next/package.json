@@ -8,7 +8,8 @@
     "start": "next start",
     "serve": "NODE_ENV=production next start --port 8151",
     "lint": "next lint",
-    "test": "vitest"
+    "test": "vitest run --pool=forks",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@tamagui/config": "^1.112.13",
