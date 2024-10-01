@@ -2043,11 +2043,11 @@ __metadata:
   linkType: hard
 
 "@expo/vector-icons@npm:^14.0.3":
-  version: 14.0.3
-  resolution: "@expo/vector-icons@npm:14.0.3"
+  version: 14.0.4
+  resolution: "@expo/vector-icons@npm:14.0.4"
   dependencies:
     prop-types: "npm:^15.8.1"
-  checksum: 10/0e21393d8c5d4778e9c4b02122698601da5aea0b9e213ecc7b5d353c13b37efee958de1ca7ca216707dc2855fbf536077bc3ef755ced6b9cf39615fab3eb28a1
+  checksum: 10/bb807830dd886cb439e90bbaf5afd5e9ea538486d3bd0cc240210a230c53e7d858b460d05836875ae0ef3958bc591c21afedb5f58086be4aeeb362d08665c809
   languageName: node
   linkType: hard
 
@@ -2411,7 +2411,7 @@ __metadata:
     "@tamagui/react-native-media-driver": "npm:^1.112.12"
     "@tamagui/shorthands": "npm:^1.112.12"
     "@tamagui/themes": "npm:^1.112.12"
-    tamagui: "npm:^1.112.0"
+    tamagui: "npm:^1.112.12"
   languageName: unknown
   linkType: soft
 
@@ -2422,7 +2422,7 @@ __metadata:
     "@my/config": "npm:0.0.1"
     "@tamagui/build": "npm:^1.112.12"
     "@tamagui/toast": "npm:^1.112.12"
-    tamagui: "npm:^1.112.0"
+    tamagui: "npm:^1.112.12"
   languageName: unknown
   linkType: soft
 
@@ -13462,8 +13462,8 @@ __metadata:
     react-dom: "npm:^18.3.1"
     react-native: "npm:0.74.2"
     react-native-web: "npm:~0.19.12"
-    react-native-web-lite: "npm:^1.112.0"
-    tamagui: "npm:^1.112.0"
+    react-native-web-lite: "npm:^1.112.4"
+    tamagui: "npm:^1.112.12"
     vercel: "npm:latest"
     vitest: "npm:^2.1.1"
   languageName: unknown
@@ -14973,7 +14973,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-web-lite@npm:^1.112.0":
+"react-native-web-lite@npm:^1.112.4":
   version: 1.112.4
   resolution: "react-native-web-lite@npm:1.112.4"
   dependencies:
@@ -16745,7 +16745,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tamagui@npm:^1.112.0":
+"tamagui@npm:^1.112.12":
   version: 1.112.12
   resolution: "tamagui@npm:1.112.12"
   dependencies:
@@ -17397,11 +17397,11 @@ __metadata:
 
 "typescript@patch:typescript@npm%3A^5.0.4#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.5.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.6.2#optional!builtin<compat/typescript>":
   version: 5.6.2
-  resolution: "typescript@patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"
+  resolution: "typescript@patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=74658d"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/8bfc7ca0d9feca4c3fcbd6c70741abfcd714197d6448e68225ae71e462447d904d3bfba49759a8fbe4956d87f054e2d346833c8349c222daa594a2626d4e1be8
+  checksum: 10/060a7349adf698477b411be4ace470aee6c2c1bd99917fdf5d33697c17ec55c64fe724eb10399387530b50e9913b41528dd8bfcca0a5fc8f8bac63fbb4580a2e
   languageName: node
   linkType: hard
 
