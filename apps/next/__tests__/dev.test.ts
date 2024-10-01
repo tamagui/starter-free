@@ -37,7 +37,13 @@ test('Next.js dev server starts and serves the expected content', async () => {
 
   devProcess.stderr?.on('data', (data) => {
     output += data.toString()
-    // ... existing code ...
+    // Log errors or warnings
+    console.error('Dev server error:', data.toString())
+    // Potentially check for specific error conditions
+    if (data.toString().includes('EADDRINUSE')) {
+      console.error('Port is already in use. Please free up the port and try again.')
+    }
+    devProcess?.kill()
   })
 
   try {
