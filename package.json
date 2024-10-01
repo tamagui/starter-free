@@ -31,7 +31,7 @@
     "@babel/runtime": "^7.24.6",
     "@manypkg/cli": "^0.21.4",
     "check-dependency-version-consistency": "^4.1.0",
-    "eslint": "^9.3.0",
+    "eslint": "^9.11.1",
     "husky": "^9.1.6",
     "node-gyp": "^10.1.0",
     "prettier": "^3.3.3",

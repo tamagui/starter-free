@@ -44,6 +44,9 @@ test('Next.js dev server starts and serves the expected content', async () => {
     // Wait for the server to start and URL to be parsed
     await new Promise<void>((resolve, reject) => {
       const timeout = setTimeout(() => {
+        if (devProcess) {
+          devProcess.kill()
+        }
         reject(new Error('Timeout waiting for dev server to start'))
       }, 30000)
 
