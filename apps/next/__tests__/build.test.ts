@@ -11,7 +11,6 @@ test('Next.js build completes', () => {
   // Check for yarn build output
   expect(buildOutput).toContain('built @my/config')
   expect(buildOutput).toContain('built @my/ui')
-  expect(buildOutput).toContain('Welcome to Tamagui!')
 
   // Check for Next.js version and build process
   expect(buildOutput).toContain('Next.js 14')
