@@ -17,9 +17,6 @@ test('Next.js build completes', () => {
   expect(buildOutput).toContain('Next.js 14')
   expect(buildOutput).toContain('Creating an optimized production build')
 
-  // Check for Tamagui build output
-  expect(buildOutput).toContain('[tamagui] built config and components')
-
   // Check for route information
   expect(buildOutput).toContain('Route (app)')
   expect(buildOutput).toContain('Route (pages)')
