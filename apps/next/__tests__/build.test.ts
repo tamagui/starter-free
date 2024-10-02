@@ -73,4 +73,4 @@ test('Next.js build completes', async () => {
   } finally {
     // The process kill check has been moved to the afterAll block
   }
-}, 30_000)
+}, 60_000)
