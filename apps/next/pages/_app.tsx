@@ -3,7 +3,7 @@ import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
 import 'raf/polyfill'
 
-import React from 'react'
+import type React from 'react'
 import Head from 'next/head'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import type { SolitoAppProps } from 'solito'
@@ -18,8 +18,14 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
     <>
       <Head>
         <title>Tamagui • Pages Router</title>
-        <meta name="description" content="Tamagui, Solito, Expo & Next.js" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Tamagui, Solito, Expo & Next.js"
+        />
+        <link
+          rel="icon"
+          href="/favicon.ico"
+        />
         <script
           dangerouslySetInnerHTML={{
             // avoid flash of animated things on enter:
@@ -45,7 +51,11 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
         setTheme(next as any)
       }}
     >
-      <Provider disableRootThemeClass disableInjectCSS defaultTheme={theme}>
+      <Provider
+        disableRootThemeClass
+        disableInjectCSS
+        defaultTheme={theme}
+      >
         {children}
       </Provider>
     </NextThemeProvider>

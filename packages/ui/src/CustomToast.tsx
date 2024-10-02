@@ -6,7 +6,6 @@ const isExpo = Constants.executionEnvironment === ExecutionEnvironment.StoreClie
 export const CustomToast = () => {
   if (isExpo) {
     return null
-  } else {
-    return <Toast />
   }
+  return <Toast />
 }

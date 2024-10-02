@@ -1186,6 +1186,97 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@biomejs/biome@npm:^1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/biome@npm:1.9.3"
+  dependencies:
+    "@biomejs/cli-darwin-arm64": "npm:1.9.3"
+    "@biomejs/cli-darwin-x64": "npm:1.9.3"
+    "@biomejs/cli-linux-arm64": "npm:1.9.3"
+    "@biomejs/cli-linux-arm64-musl": "npm:1.9.3"
+    "@biomejs/cli-linux-x64": "npm:1.9.3"
+    "@biomejs/cli-linux-x64-musl": "npm:1.9.3"
+    "@biomejs/cli-win32-arm64": "npm:1.9.3"
+    "@biomejs/cli-win32-x64": "npm:1.9.3"
+  dependenciesMeta:
+    "@biomejs/cli-darwin-arm64":
+      optional: true
+    "@biomejs/cli-darwin-x64":
+      optional: true
+    "@biomejs/cli-linux-arm64":
+      optional: true
+    "@biomejs/cli-linux-arm64-musl":
+      optional: true
+    "@biomejs/cli-linux-x64":
+      optional: true
+    "@biomejs/cli-linux-x64-musl":
+      optional: true
+    "@biomejs/cli-win32-arm64":
+      optional: true
+    "@biomejs/cli-win32-x64":
+      optional: true
+  bin:
+    biome: bin/biome
+  checksum: 10/22278454245f3ca178762df09721389abb884fbce87f834f6979a6a9d8db397df160a6d5019a3c7f6bd7d54d136bfaf1b6d3e6852fd9cf45bebc2be0337cb7dd
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-darwin-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-darwin-arm64@npm:1.9.3"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-darwin-x64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-darwin-x64@npm:1.9.3"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-arm64-musl@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-linux-arm64-musl@npm:1.9.3"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-linux-arm64@npm:1.9.3"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-x64-musl@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-linux-x64-musl@npm:1.9.3"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-x64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-linux-x64@npm:1.9.3"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-win32-arm64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-win32-arm64@npm:1.9.3"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-win32-x64@npm:1.9.3":
+  version: 1.9.3
+  resolution: "@biomejs/cli-win32-x64@npm:1.9.3"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -2426,10 +2517,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@next/env@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/env@npm:14.2.13"
-  checksum: 10/b61ae9e50d04c84a8e10860b61d5c6b74478447a5f952e378b2f809360696942e76227e0f72866ddfde3356fb5be378a1be796f7be52c76cf423f1137bb2d975
+"@next/env@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/env@npm:14.2.14"
+  checksum: 10/b2ac33489acc92708a9f1dc286289ace57d4e5ef13a1110a98c3f5b2de909e3e8d605d9c85f5b5e8afd476af75ed878ed89473b8dc02566d142bbaa2dae9183d
   languageName: node
   linkType: hard
 
@@ -2442,65 +2533,65 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-darwin-arm64@npm:14.2.13"
+"@next/swc-darwin-arm64@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-darwin-arm64@npm:14.2.14"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-darwin-x64@npm:14.2.13"
+"@next/swc-darwin-x64@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-darwin-x64@npm:14.2.14"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-linux-arm64-gnu@npm:14.2.13"
+"@next/swc-linux-arm64-gnu@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-linux-arm64-gnu@npm:14.2.14"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-linux-arm64-musl@npm:14.2.13"
+"@next/swc-linux-arm64-musl@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-linux-arm64-musl@npm:14.2.14"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-linux-x64-gnu@npm:14.2.13"
+"@next/swc-linux-x64-gnu@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-linux-x64-gnu@npm:14.2.14"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-linux-x64-musl@npm:14.2.13"
+"@next/swc-linux-x64-musl@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-linux-x64-musl@npm:14.2.14"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-win32-arm64-msvc@npm:14.2.13"
+"@next/swc-win32-arm64-msvc@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-win32-arm64-msvc@npm:14.2.14"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-ia32-msvc@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-win32-ia32-msvc@npm:14.2.13"
+"@next/swc-win32-ia32-msvc@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-win32-ia32-msvc@npm:14.2.14"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:14.2.13":
-  version: 14.2.13
-  resolution: "@next/swc-win32-x64-msvc@npm:14.2.13"
+"@next/swc-win32-x64-msvc@npm:14.2.14":
+  version: 14.2.14
+  resolution: "@next/swc-win32-x64-msvc@npm:14.2.14"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -13461,7 +13552,7 @@ __metadata:
     "@types/node": "npm:^20.14.1"
     app: "npm:0.0.0"
     eslint-config-next: "npm:^14.2.3"
-    next: "npm:14.2.13"
+    next: "npm:14.2.14"
     next-compose-plugins: "npm:^2.2.1"
     next-transpile-modules: "npm:^10.0.1"
     raf: "npm:^3.4.1"
@@ -13471,6 +13562,7 @@ __metadata:
     react-native-web: "npm:~0.19.12"
     react-native-web-lite: "npm:^1.112.4"
     tamagui: "npm:^1.112.14"
+    tree-kill: "npm:^1.2.2"
     vercel: "npm:latest"
     vitest: "npm:^2.1.1"
   languageName: unknown
@@ -13492,20 +13584,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:14.2.13":
-  version: 14.2.13
-  resolution: "next@npm:14.2.13"
+"next@npm:14.2.14":
+  version: 14.2.14
+  resolution: "next@npm:14.2.14"
   dependencies:
-    "@next/env": "npm:14.2.13"
-    "@next/swc-darwin-arm64": "npm:14.2.13"
-    "@next/swc-darwin-x64": "npm:14.2.13"
-    "@next/swc-linux-arm64-gnu": "npm:14.2.13"
-    "@next/swc-linux-arm64-musl": "npm:14.2.13"
-    "@next/swc-linux-x64-gnu": "npm:14.2.13"
-    "@next/swc-linux-x64-musl": "npm:14.2.13"
-    "@next/swc-win32-arm64-msvc": "npm:14.2.13"
-    "@next/swc-win32-ia32-msvc": "npm:14.2.13"
-    "@next/swc-win32-x64-msvc": "npm:14.2.13"
+    "@next/env": "npm:14.2.14"
+    "@next/swc-darwin-arm64": "npm:14.2.14"
+    "@next/swc-darwin-x64": "npm:14.2.14"
+    "@next/swc-linux-arm64-gnu": "npm:14.2.14"
+    "@next/swc-linux-arm64-musl": "npm:14.2.14"
+    "@next/swc-linux-x64-gnu": "npm:14.2.14"
+    "@next/swc-linux-x64-musl": "npm:14.2.14"
+    "@next/swc-win32-arm64-msvc": "npm:14.2.14"
+    "@next/swc-win32-ia32-msvc": "npm:14.2.14"
+    "@next/swc-win32-x64-msvc": "npm:14.2.14"
     "@swc/helpers": "npm:0.5.5"
     busboy: "npm:1.6.0"
     caniuse-lite: "npm:^1.0.30001579"
@@ -13546,7 +13638,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 10/152928801dc403172e6b4a3d64ae250ad59a4d57fff862d9560687380d4b6ca95a07439da9a9b702bda86ff01093aa04e46a0003d0422295bdbd7d8ce449c4d6
+  checksum: 10/976f88491b23079dded347abf3c31b97ef8e2fc9fde89b649d3603d56370d222cc1966187a163e4ec0d68f74568e185949263136bfe5d774aaaa7ffcc4ef476f
   languageName: node
   linkType: hard
 
@@ -16322,6 +16414,7 @@ __metadata:
   resolution: "starter-free@workspace:."
   dependencies:
     "@babel/runtime": "npm:^7.24.6"
+    "@biomejs/biome": "npm:^1.9.3"
     "@manypkg/cli": "npm:^0.21.4"
     check-dependency-version-consistency: "npm:^4.1.0"
     eslint: "npm:^9.3.0"
@@ -17078,7 +17171,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tree-kill@npm:1.2.2":
+"tree-kill@npm:1.2.2, tree-kill@npm:^1.2.2":
   version: 1.2.2
   resolution: "tree-kill@npm:1.2.2"
   bin:
@@ -17404,11 +17497,11 @@ __metadata:
 
 "typescript@patch:typescript@npm%3A^5.0.4#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.5.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.6.2#optional!builtin<compat/typescript>":
   version: 5.6.2
-  resolution: "typescript@patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"
+  resolution: "typescript@patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=74658d"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/8bfc7ca0d9feca4c3fcbd6c70741abfcd714197d6448e68225ae71e462447d904d3bfba49759a8fbe4956d87f054e2d346833c8349c222daa594a2626d4e1be8
+  checksum: 10/060a7349adf698477b411be4ace470aee6c2c1bd99917fdf5d33697c17ec55c64fe724eb10399387530b50e9913b41528dd8bfcca0a5fc8f8bac63fbb4580a2e
   languageName: node
   linkType: hard
 

@@ -5,7 +5,7 @@ import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
 import '@tamagui/polyfill-dev'
 
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import { StyleSheet } from 'react-native'
 import { useServerInsertedHTML } from 'next/navigation'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
@@ -20,7 +20,10 @@ export const NextTamaguiProvider = ({ children }: { children: ReactNode }) => {
     const rnwStyle = StyleSheet.getSheet()
     return (
       <>
-        <style dangerouslySetInnerHTML={{ __html: rnwStyle.textContent }} id={rnwStyle.id} />
+        <style
+          dangerouslySetInnerHTML={{ __html: rnwStyle.textContent }}
+          id={rnwStyle.id}
+        />
 
         <style
           dangerouslySetInnerHTML={{
@@ -47,7 +50,10 @@ export const NextTamaguiProvider = ({ children }: { children: ReactNode }) => {
           }}
         />
 
-        <style jsx global>{`
+        <style
+          jsx
+          global
+        >{`
           html {
             font-family: 'Inter';
           }
@@ -65,7 +71,10 @@ export const NextTamaguiProvider = ({ children }: { children: ReactNode }) => {
         setTheme(next as any)
       }}
     >
-      <Provider disableRootThemeClass defaultTheme={theme}>
+      <Provider
+        disableRootThemeClass
+        defaultTheme={theme}
+      >
         {children}
       </Provider>
     </NextThemeProvider>
