@@ -14,7 +14,8 @@
     "@tamagui/config": "^1.112.16",
     "@tamagui/next-theme": "^1.112.16",
     "app": "0.0.0",
-    "next": "14.2.13",
+    "mini-css-extract-plugin": "^2.9.1",
+    "next": "14.2.14",
     "raf": "^3.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -30,6 +31,7 @@
     "eslint-config-next": "^14.2.3",
     "next-compose-plugins": "^2.2.1",
     "next-transpile-modules": "^10.0.1",
+    "tree-kill": "^1.2.2",
     "vitest": "^2.1.1"
   }
 }

@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const { withTamagui } = require('@tamagui/next-plugin')
-const { join } = require('path')
+const { join } = require('node:path')
 
 const boolVals = {
   true: true,
@@ -9,27 +9,6 @@ const boolVals = {
 
 const disableExtraction =
   boolVals[process.env.DISABLE_EXTRACTION] ?? process.env.NODE_ENV === 'development'
-
-console.log(`
-
-Welcome to Tamagui!
-
-You can update this monorepo to the latest Tamagui release just by running:
-
-yarn upgrade:tamagui
-
-We've set up a few things for you.
-
-See the "excludeReactNativeWebExports" setting in next.config.js, which omits these
-from the bundle: Switch, ProgressBar Picker, CheckBox, Touchable. To save more,
-you can add ones you don't need like: AnimatedFlatList, FlatList, SectionList,
-VirtualizedList, VirtualizedSectionList.
-
-🐣
-
-Remove this log in next.config.js.
-
-`)
 
 const plugins = [
   withTamagui({
@@ -49,7 +28,7 @@ const plugins = [
   }),
 ]
 
-module.exports = function () {
+module.exports = () => {
   /** @type {import('next').NextConfig} */
   let config = {
     typescript: {

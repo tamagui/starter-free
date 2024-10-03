@@ -23,7 +23,14 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" gap="$8" p="$4" bg="$background">
+    <YStack
+      f={1}
+      jc="center"
+      ai="center"
+      gap="$8"
+      p="$4"
+      bg="$background"
+    >
       <XStack
         pos="absolute"
         w="100%"
@@ -42,10 +49,16 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
       </XStack>
 
       <YStack gap="$4">
-        <H1 ta="center" col="$color12">
+        <H1
+          ta="center"
+          col="$color12"
+        >
           Welcome to Tamagui.
         </H1>
-        <Paragraph col="$color10" ta="center">
+        <Paragraph
+          col="$color10"
+          ta="center"
+        >
           Here's a basic starter to show navigating from one screen to another.
         </Paragraph>
         <Separator />
@@ -86,12 +99,25 @@ function SheetDemo() {
         onPositionChange={setPosition}
         dismissOnSnapToBottom
       >
-        <Sheet.Overlay animation="lazy" enterStyle={{ opacity: 0 }} exitStyle={{ opacity: 0 }} />
+        <Sheet.Overlay
+          animation="lazy"
+          enterStyle={{ opacity: 0 }}
+          exitStyle={{ opacity: 0 }}
+        />
         <Sheet.Handle bg="$gray8" />
-        <Sheet.Frame ai="center" jc="center" gap="$10" bg="$color2">
+        <Sheet.Frame
+          ai="center"
+          jc="center"
+          gap="$10"
+          bg="$color2"
+        >
           <XStack gap="$2">
             <Paragraph ta="center">Made by</Paragraph>
-            <Anchor col="$blue10" href="https://twitter.com/natebirdman" target="_blank">
+            <Anchor
+              col="$blue10"
+              href="https://twitter.com/natebirdman"
+              target="_blank"
+            >
               @natebirdman,
             </Anchor>
             <Anchor
