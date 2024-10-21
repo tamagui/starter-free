@@ -5,7 +5,7 @@ import { createParam } from 'solito'
 const { useParam } = createParam<{ id: string }>()
 
 export default function Page() {
-  const id = useParam('id') as unknown as string
+  const [id] = useParam('id') as unknown as string
   return (
     <>
       <Head>
