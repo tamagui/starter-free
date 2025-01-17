@@ -2,7 +2,6 @@ import { createTamagui } from 'tamagui'
 import { createInterFont } from '@tamagui/font-inter'
 import { shorthands } from '@tamagui/shorthands'
 import { tokens, themes } from '@tamagui/config/v3'
-import { createMedia } from '@tamagui/react-native-media-driver'
 
 import { animations } from '@my/ui/src/animations'
 
@@ -71,7 +70,7 @@ export const config = createTamagui({
   },
   themes,
   tokens,
-  media: createMedia({
+  media: {
     xs: { maxWidth: 660 },
     sm: { maxWidth: 800 },
     md: { maxWidth: 1020 },
@@ -86,7 +85,7 @@ export const config = createTamagui({
     tall: { minHeight: 820 },
     hoverNone: { hover: 'none' },
     pointerCoarse: { pointer: 'coarse' },
-  }),
+  },
 })
 
 // for the compiler to find it
