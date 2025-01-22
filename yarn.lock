@@ -10520,8 +10520,6 @@ __metadata:
     "@expo/config-plugins": "npm:9.0.14"
     "@expo/metro-config": "npm:0.19.9"
     "@my/ui": "npm:0.0.1"
-    "@react-navigation/bottom-tabs": "npm:^7.2.0"
-    "@react-navigation/native": "npm:^7.0.14"
     "@tamagui/babel-plugin": "npm:^1.122.7"
     app: "npm:0.0.0"
     babel-plugin-module-resolver: "npm:^5.0.2"
