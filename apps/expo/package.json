@@ -15,6 +15,8 @@
     "@babel/runtime": "^7.26.0",
     "@expo/config-plugins": "9.0.14",
     "@my/ui": "0.0.1",
+    "@react-navigation/bottom-tabs": "^7.2.0",
+    "@react-navigation/native": "^7.0.14",
     "app": "0.0.0",
     "babel-plugin-module-resolver": "^5.0.2",
     "burnt": "^0.12.2",
