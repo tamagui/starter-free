@@ -1,7 +1,7 @@
 import { createTamagui } from 'tamagui'
 import { createInterFont } from '@tamagui/font-inter'
 import { shorthands } from '@tamagui/shorthands'
-import { tokens, themes } from '@tamagui/config/v3'
+import { defaultConfig, themes, tokens } from '@tamagui/config/v4'
 
 import { animations } from '@my/ui/src/animations'
 
@@ -50,6 +50,7 @@ const bodyFont = createInterFont(
 )
 
 export const config = createTamagui({
+  ...defaultConfig,
   defaultFont: 'body',
   animations,
   shouldAddPrefersColorThemes: true,
