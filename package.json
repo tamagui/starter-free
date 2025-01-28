@@ -10,7 +10,7 @@
     "native:prebuild": "cd apps/expo && yarn prebuild",
     "ios": "cd apps/expo && yarn ios",
     "android": "cd apps/expo && yarn android",
-    "watch": "yarn workspaces foreach -pi run watch",
+    "watch": "ultra -r --no-pretty --concurrency 400 watch",
     "vercel:install": "yarn set version 3.5 && yarn install",
     "web": "yarn build && cd apps/next && yarn next",
     "web:extract": "DISABLE_EXTRACTION=false yarn workspace next-app dev",
@@ -41,6 +41,7 @@
     "prettier": "^3.3.3",
     "turbo": "^1.13.4",
     "typescript": "^5.6.2",
+    "ultra-runner": "^3.10.5",
     "vitest": "^2.1.1"
   },
   "packageManager": "yarn@4.5.0",
