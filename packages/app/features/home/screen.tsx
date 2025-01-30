@@ -9,7 +9,7 @@ import {
   SwitchThemeButton,
   useToastController,
   XStack,
-  YStack,
+  YStack
 } from '@my/ui'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
@@ -23,7 +23,7 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
   })
 
   return (
-    <YStack flex={1} justify="center" items="center" gap="$8" p="$4" bg="$background">
+    <YStack flex={1} justify="center" items="center" gap="$8" p="$4" bg="$background">      
       <XStack
         position="absolute"
         width="100%"
