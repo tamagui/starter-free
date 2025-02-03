@@ -1,13 +1,13 @@
 import { useColorScheme } from 'react-native'
 import {
-  CustomToast,
+  // CustomToast,
   TamaguiProvider,
   type TamaguiProviderProps,
-  ToastProvider,
+  // ToastProvider,
   config,
   isWeb,
 } from '@my/ui'
-import { ToastViewport } from './ToastViewport'
+// import { ToastViewport } from './ToastViewport'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   const colorScheme = useColorScheme()
@@ -18,11 +18,11 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
       defaultTheme={colorScheme === 'dark' ? 'dark' : 'light'}
       {...rest}
     >
-      <ToastProvider swipeDirection="horizontal" duration={6000} native={isWeb ? [] : ['mobile']}>
+      {/* <ToastProvider swipeDirection="horizontal" duration={6000} native={isWeb ? [] : ['mobile']}>
         {children}
         <CustomToast />
         <ToastViewport />
-      </ToastProvider>
+      </ToastProvider> */}
     </TamaguiProvider>
   )
 }
