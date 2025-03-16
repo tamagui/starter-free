@@ -9,15 +9,16 @@ import {
 } from '@my/ui'
 import { ToastViewport } from './ToastViewport'
 
-export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
+export function Provider({
+  children,
+  defaultTheme = 'light',
+  ...rest
+}: Omit<TamaguiProviderProps, 'config'> & { defaultTheme?: string }) {
   const colorScheme = useColorScheme()
+  const theme = defaultTheme || (colorScheme === 'dark' ? 'dark' : 'light')
 
   return (
-    <TamaguiProvider
-      config={config}
-      defaultTheme={colorScheme === 'dark' ? 'dark' : 'light'}
-      {...rest}
-    >
+    <TamaguiProvider config={config} defaultTheme={theme} {...rest}>
       <ToastProvider swipeDirection="horizontal" duration={6000} native={isWeb ? [] : ['mobile']}>
         {children}
         <CustomToast />
