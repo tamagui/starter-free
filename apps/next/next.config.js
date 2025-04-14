@@ -50,6 +50,9 @@ module.exports = () => {
     experimental: {
       scrollRestoration: true,
     },
+    env: {
+      TAMAGUI_ENVIRONMENT: process.env.NODE_ENV,
+    },
   }
 
   for (const plugin of plugins) {
