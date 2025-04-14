@@ -37,12 +37,12 @@
     "react-native-safe-area-context": "5.2.0",
     "react-native-screens": "4.9.1",
     "react-native-svg": "15.11.2",
-    "react-native-web": "0.19.12"
+    "react-native-web": "^0.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
     "@expo/metro-config": "0.19.9",
-    "@tamagui/babel-plugin": "^1.125.26",
+    "@tamagui/babel-plugin": "^1.125.34",
     "metro-minify-terser": "^0.81.0",
     "typescript": "^5.7.3"
   },
