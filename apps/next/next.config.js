@@ -24,6 +24,7 @@ const plugins = [
         return true
       }
     },
+    disableThemesBundleOptimize: true,
     excludeReactNativeWebExports: ['Switch', 'ProgressBar', 'Picker', 'CheckBox', 'Touchable'],
   }),
 ]
@@ -49,9 +50,6 @@ module.exports = () => {
     ],
     experimental: {
       scrollRestoration: true,
-    },
-    env: {
-      TAMAGUI_ENVIRONMENT: process.env.NODE_ENV,
     },
   }
 
