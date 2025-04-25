@@ -21,7 +21,6 @@
     "react-dom": "^18.3.1",
     "react-native": "0.77.1",
     "react-native-web": "^0.20.0",
-    "react-native-web-lite": "^1.112.4",
     "tamagui": "^1.126.1",
     "vercel": "latest"
   },

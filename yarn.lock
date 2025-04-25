@@ -4837,15 +4837,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/normalize-css-color@npm:1.112.4":
-  version: 1.112.4
-  resolution: "@tamagui/normalize-css-color@npm:1.112.4"
-  dependencies:
-    "@react-native/normalize-color": "npm:^2.1.0"
-  checksum: 10/29dfaa0bb3b707b76c5752086d0795f68197331ea8e6fe031f7f6d79a2691a85b0b5e6e1d9940cf7493351f23ae4285e8c5a6069919131a934a9103aa40774c8
-  languageName: node
-  linkType: hard
-
 "@tamagui/normalize-css-color@npm:1.126.1":
   version: 1.126.1
   resolution: "@tamagui/normalize-css-color@npm:1.126.1"
@@ -5007,15 +4998,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/react-native-use-pressable@npm:1.112.4":
-  version: 1.112.4
-  resolution: "@tamagui/react-native-use-pressable@npm:1.112.4"
-  peerDependencies:
-    react: "*"
-  checksum: 10/73c74ea2ab6644b3cef6a2756289b11e2f8cf63805a663d1ab02e64bfd29f87d73e98feb0da0594f436fc78fafe9f7705295dd636b1ebe19a04d32e8f1bfdcdc
-  languageName: node
-  linkType: hard
-
 "@tamagui/react-native-use-pressable@npm:1.126.1":
   version: 1.126.1
   resolution: "@tamagui/react-native-use-pressable@npm:1.126.1"
@@ -5025,35 +5007,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/react-native-use-responder-events@npm:1.112.4":
-  version: 1.112.4
-  resolution: "@tamagui/react-native-use-responder-events@npm:1.112.4"
-  peerDependencies:
-    react: "*"
-  checksum: 10/45d644182e1823b8c7d6a1d1e23dbc874bbcf284d31ea888a51ad8015146a30f49722410bb6b962bf1f8c8a170f77b372abace6cf6c44c552ba29a3d433ff266
-  languageName: node
-  linkType: hard
-
 "@tamagui/react-native-use-responder-events@npm:1.126.1":
   version: 1.126.1
   resolution: "@tamagui/react-native-use-responder-events@npm:1.126.1"
   peerDependencies:
     react: "*"
   checksum: 10/2d090c0a00c859ac58ed4f05dbe7c86d91bf2f8745845649e6e45007cd6a2ec43b8206ecab383bdbfec75a5740bab08388b01681dd395f4730f82d0c9298d441
-  languageName: node
-  linkType: hard
-
-"@tamagui/react-native-web-internals@npm:1.112.4":
-  version: 1.112.4
-  resolution: "@tamagui/react-native-web-internals@npm:1.112.4"
-  dependencies:
-    "@tamagui/normalize-css-color": "npm:1.112.4"
-    "@tamagui/react-native-use-pressable": "npm:1.112.4"
-    "@tamagui/react-native-use-responder-events": "npm:1.112.4"
-    "@tamagui/simple-hash": "npm:1.112.4"
-    react: "npm:^18.2.0 || ^19.0.0"
-    styleq: "npm:^0.1.3"
-  checksum: 10/f235b29cf4d9f7ff065bc8614094c9e1c4942c055f64ba1b6b4c97e60371b319a1a54b3338272feff135ed0ebbc2314269c8aac68edfa9697572d4e61ac3ded5
   languageName: node
   linkType: hard
 
@@ -5219,13 +5178,6 @@ __metadata:
   dependencies:
     "@tamagui/web": "npm:1.126.1"
   checksum: 10/a472076436512d30c25ad01589a97e189d07c3f61ec294d901d3a348a6400edcb189b8a65a618431666761500861ea80438a745d880144680b471105ab1d9bf9
-  languageName: node
-  linkType: hard
-
-"@tamagui/simple-hash@npm:1.112.4":
-  version: 1.112.4
-  resolution: "@tamagui/simple-hash@npm:1.112.4"
-  checksum: 10/f1361f07e16688860598d001887239c7959d02b016b58f089af083bf391333d459afb65a1708e1b4b3bd4fb34308ec1ba36834e2279809961b74925cfbc7a5eb
   languageName: node
   linkType: hard
 
@@ -13759,7 +13711,6 @@ __metadata:
     react-dom: "npm:^18.3.1"
     react-native: "npm:0.77.1"
     react-native-web: "npm:^0.20.0"
-    react-native-web-lite: "npm:^1.112.4"
     tamagui: "npm:^1.126.1"
     tree-kill: "npm:^1.2.2"
     vercel: "npm:latest"
@@ -15309,22 +15260,6 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 10/bab86df8fdd4f500ad3f242558726693b0409b5e9b2a97cb3e9b5c1dfdcef01fe73fd36f01926ef20b19f99928b6ab1fb9e942bbeb1308aab27aa0d6c4877a5e
-  languageName: node
-  linkType: hard
-
-"react-native-web-lite@npm:^1.112.4":
-  version: 1.112.4
-  resolution: "react-native-web-lite@npm:1.112.4"
-  dependencies:
-    "@tamagui/normalize-css-color": "npm:1.112.4"
-    "@tamagui/react-native-use-pressable": "npm:1.112.4"
-    "@tamagui/react-native-use-responder-events": "npm:1.112.4"
-    "@tamagui/react-native-web-internals": "npm:1.112.4"
-    invariant: "npm:^2.2.4"
-    styleq: "npm:^0.1.3"
-  peerDependencies:
-    react: "*"
-  checksum: 10/b6bc9f0cf9171c45f4668b07eba874c58cc98559cd60ab3ab90c8d64389d2af4cd3ac0f79b9f12c69df022b3bd4c43fb481e644bd88b5c91fecc277e8998821f
   languageName: node
   linkType: hard
 
