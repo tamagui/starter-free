@@ -6100,27 +6100,13 @@ __metadata:
   dependencies:
     "@my/ui": "npm:0.0.1"
     "@react-navigation/native": "npm:^6.1.17"
-<<<<<<< HEAD
-    "@tamagui/animations-react-native": "npm:^1.126.7"
-    "@tamagui/colors": "npm:^1.126.7"
-    "@tamagui/font-inter": "npm:^1.126.7"
-    "@tamagui/lucide-icons": "npm:^1.126.7"
-    "@tamagui/shorthands": "npm:^1.126.7"
-    "@tamagui/themes": "npm:^1.126.7"
-    "@types/react": "npm:~19.0.10"
-=======
     "@tamagui/animations-react-native": "npm:^1.126.8"
     "@tamagui/colors": "npm:^1.126.8"
     "@tamagui/font-inter": "npm:^1.126.8"
     "@tamagui/lucide-icons": "npm:^1.126.8"
     "@tamagui/shorthands": "npm:^1.126.8"
     "@tamagui/themes": "npm:^1.126.8"
-<<<<<<< HEAD
-    "@types/react": "npm:^18.3.3"
->>>>>>> bb4af59 (v1.126.8)
-=======
     "@types/react": "npm:~19.0.10"
->>>>>>> dfd8990 (merge updates)
     "@types/react-native": "npm:^0.73.0"
     burnt: "npm:^0.12.2"
     expo-constants: "npm:~17.1.6"
@@ -9137,20 +9123,9 @@ __metadata:
     "@expo/config-plugins": "npm:~10.0.0"
     "@expo/metro-config": "npm:~0.20.0"
     "@my/ui": "npm:0.0.1"
-<<<<<<< HEAD
-<<<<<<< HEAD
     "@react-navigation/bottom-tabs": "npm:^7.3.12"
     "@react-navigation/native": "npm:^7.1.8"
-    "@tamagui/babel-plugin": "npm:^1.126.7"
-=======
-    "@react-navigation/bottom-tabs": "npm:^7.2.0"
-    "@react-navigation/native": "npm:^7.0.14"
-=======
-    "@react-navigation/bottom-tabs": "npm:^7.3.12"
-    "@react-navigation/native": "npm:^7.1.8"
->>>>>>> dfd8990 (merge updates)
     "@tamagui/babel-plugin": "npm:^1.126.8"
->>>>>>> bb4af59 (v1.126.8)
     app: "npm:0.0.0"
     babel-plugin-module-resolver: "npm:^5.0.2"
     burnt: "npm:^0.12.2"
