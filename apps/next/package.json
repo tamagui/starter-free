@@ -11,8 +11,8 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@tamagui/config": "^1.126.18",
-    "@tamagui/next-theme": "^1.126.18",
+    "@tamagui/config": "^1.127.0",
+    "@tamagui/next-theme": "^1.127.0",
     "app": "0.0.0",
     "next": "14.2.14",
     "raf": "^3.4.1",
@@ -20,11 +20,11 @@
     "react-dom": "19.0.0",
     "react-native": "0.79.2",
     "react-native-web": "^0.20.0",
-    "tamagui": "^1.126.18",
+    "tamagui": "^1.127.0",
     "vercel": "latest"
   },
   "devDependencies": {
-    "@tamagui/next-plugin": "^1.126.18",
+    "@tamagui/next-plugin": "^1.127.0",
     "@types/node": "^20.14.1",
     "eslint-config-next": "^14.2.3",
     "next-compose-plugins": "^2.2.1",
