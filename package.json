@@ -44,7 +44,7 @@
     "ultra-runner": "^3.10.5",
     "vitest": "^2.1.1"
   },
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "yarn@4.9.1",
   "engines": {
     "node": "22",
     "npm": "10.8"
