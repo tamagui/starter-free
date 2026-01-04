@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "cd ../.. && yarn build && cd apps/next && next build --webpack",
+    "dev": "next dev",
+    "build": "cd ../.. && yarn build && cd apps/next && next build",
     "start": "next start",
     "serve": "NODE_ENV=production next start --port 8151",
     "lint": "next lint",
