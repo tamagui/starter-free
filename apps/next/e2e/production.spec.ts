@@ -90,4 +90,57 @@ test.describe('Production Mode', () => {
       expect(hasErrors).toBe(false)
     }
   })
+
+  test('should support theme switching', async ({ page }) => {
+    const errors: string[] = []
+
+    page.on('console', (msg) => {
+      if (msg.type() === 'error') {
+        errors.push(msg.text())
+      }
+    })
+
+    page.on('pageerror', (error) => {
+      errors.push(error.message)
+    })
+
+    await page.waitForLoadState('networkidle')
+
+    // Find the theme switch button
+    const themeButton = page.getByRole('button', { name: /change theme/i })
+
+    if (await themeButton.count() > 0) {
+      // Get initial theme from the button text or HTML class
+      const initialTheme = await page.evaluate(() => {
+        return document.documentElement.classList.contains('t_dark') ? 'dark' : 'light'
+      })
+
+      // Click to switch theme
+      await themeButton.click()
+
+      // Wait for theme transition
+      await page.waitForTimeout(300)
+
+      // Verify theme changed
+      const newTheme = await page.evaluate(() => {
+        return document.documentElement.classList.contains('t_dark') ? 'dark' : 'light'
+      })
+
+      expect(newTheme).not.toBe(initialTheme)
+
+      // Click again to switch back
+      await themeButton.click()
+      await page.waitForTimeout(300)
+
+      // Verify theme switched back
+      const finalTheme = await page.evaluate(() => {
+        return document.documentElement.classList.contains('t_dark') ? 'dark' : 'light'
+      })
+
+      expect(finalTheme).toBe(initialTheme)
+
+      // Verify no errors during theme switching
+      expect(errors, 'Should have no errors during theme switching').toEqual([])
+    }
+  })
 })

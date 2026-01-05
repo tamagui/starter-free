@@ -34,9 +34,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.24.6",
-    "@tamagui/cli": "^1.142.0",
-    "@tamagui/react-native-svg": "^1.142.0",
-    "@tamagui/react-native-web-lite": "^1.142.0",
+    "@tamagui/cli": "^1.143.0",
+    "@tamagui/react-native-svg": "^1.143.0",
+    "@tamagui/react-native-web-lite": "^1.143.0",
     "check-dependency-version-consistency": "^4.1.0",
     "eslint": "^9.3.0",
     "husky": "^9.1.6",
