@@ -1,5 +1,8 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+  "files": {
+    "ignore": ["**/ios/**", "**/android/**", "**/node_modules/**", "**/.tamagui/**", "**/dist/**"]
+  },
   "organizeImports": {
     "enabled": false
   },
@@ -7,7 +10,8 @@
     "enabled": true,
     "ignore": [
       ".tamagui",
-      "*/ios/**",
+      "**/ios/**",
+      "**/android/**",
       ".vscode",
       "**/tamagui.css",
       "**/*.d.ts",
@@ -85,6 +89,7 @@
     "ignore": [
       ".tamagui",
       "**/ios/**",
+      "**/android/**",
       ".vscode",
       "**/tamagui.css",
       "**/*.d.ts",

@@ -18,8 +18,16 @@ export function Provider({
   const theme = defaultTheme || (colorScheme === 'dark' ? 'dark' : 'light')
 
   return (
-    <TamaguiProvider config={config} defaultTheme={theme} {...rest}>
-      <ToastProvider swipeDirection="horizontal" duration={6000} native={isWeb ? [] : ['mobile']}>
+    <TamaguiProvider
+      config={config}
+      defaultTheme={theme}
+      {...rest}
+    >
+      <ToastProvider
+        swipeDirection="horizontal"
+        duration={6000}
+        native={isWeb ? [] : ['mobile']}
+      >
         {children}
         <CustomToast />
         <ToastViewport />

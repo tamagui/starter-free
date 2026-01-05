@@ -54,7 +54,7 @@ test.describe('Production Mode', () => {
 
     // Find and click user link
     const userLink = page.getByRole('link', { name: /user/i })
-    if (await userLink.count() > 0) {
+    if ((await userLink.count()) > 0) {
       await userLink.click()
 
       // Wait for client-side navigation
@@ -109,7 +109,7 @@ test.describe('Production Mode', () => {
     // Find the theme switch button
     const themeButton = page.getByRole('button', { name: /change theme/i })
 
-    if (await themeButton.count() > 0) {
+    if ((await themeButton.count()) > 0) {
       // Get initial theme from the button text or HTML class
       const initialTheme = await page.evaluate(() => {
         return document.documentElement.classList.contains('t_dark') ? 'dark' : 'light'

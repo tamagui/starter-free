@@ -10,8 +10,8 @@ export const config = createTamagui({
     body: bodyFont,
     heading: headingFont,
   },
-  settings:{
+  settings: {
     ...defaultConfig.settings,
-    onlyAllowShorthands: false
-  }
+    onlyAllowShorthands: false,
+  },
 })

@@ -35,7 +35,7 @@ test.describe('Home Page', () => {
 
     // Look for a link to user page
     const userLink = page.getByRole('link', { name: /user/i })
-    if (await userLink.count() > 0) {
+    if ((await userLink.count()) > 0) {
       await userLink.click()
       await page.waitForLoadState('networkidle')
 
