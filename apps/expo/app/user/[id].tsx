@@ -1,9 +1,8 @@
 import { UserDetailScreen } from 'app/features/user/detail-screen'
-import { Stack } from 'expo-router'
-import { useParams } from 'solito/navigation'
+import { Stack, useLocalSearchParams } from 'expo-router'
 
 export default function Screen() {
-  const { id } = useParams()
+  const { id } = useLocalSearchParams<{ id: string }>()
   return (
     <>
       <Stack.Screen
