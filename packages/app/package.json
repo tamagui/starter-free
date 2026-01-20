@@ -9,17 +9,17 @@
   "dependencies": {
     "@my/ui": "0.0.1",
     "@react-navigation/native": "^6.1.17",
-    "@tamagui/animations-react-native": "^1.144.2",
-    "@tamagui/colors": "^1.144.2",
-    "@tamagui/font-inter": "^1.144.2",
-    "@tamagui/lucide-icons": "^1.144.2",
-    "@tamagui/shorthands": "^1.144.2",
-    "@tamagui/themes": "^1.144.2",
+    "@tamagui/animations-react-native": "^2.0.0-1768859816578",
+    "@tamagui/colors": "^2.0.0-1768859816578",
+    "@tamagui/font-inter": "^2.0.0-1768859816578",
+    "@tamagui/lucide-icons": "^2.0.0-1768859816578",
+    "@tamagui/shorthands": "^2.0.0-1768859816578",
+    "@tamagui/themes": "^2.0.0-1768859816578",
     "burnt": "^0.12.2",
     "expo-constants": "~17.1.6",
     "expo-linking": "~7.1.4",
     "react-native-safe-area-context": "5.4.0",
-    "solito": "^5.0.0"
+    "solito": "patch:solito@npm%3A5.0.0#~/.yarn/patches/solito-npm-5.0.0-44b0b420f4.patch"
   },
   "devDependencies": {
     "@types/react": "~19.0.10",

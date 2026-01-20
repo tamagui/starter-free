@@ -1,0 +1,31 @@
+diff --git a/dist/esm/Portal.native.js b/dist/esm/Portal.native.js
+index 1234567..abcdefg 100644
+--- a/dist/esm/Portal.native.js
++++ b/dist/esm/Portal.native.js
+@@ -6,23 +6,8 @@ import { RootTagContext } from "react-native";
+ import { IS_FABRIC, USE_NATIVE_PORTAL } from "./constants.native.js";
+ import { GorhomPortalItem } from "./GorhomPortalItem.native.js";
+ import { getStackedZIndexProps } from "./helpers.native.js";
+-var createPortal = function () {
+-    if (IS_FABRIC) try {
+-      var _ReactFabricShimModule_default,
+-        ReactFabricShimModule = require("react-native/Libraries/Renderer/shims/ReactFabric"),
+-        _ReactFabricShimModule_default_createPortal;
+-      return (_ReactFabricShimModule_default_createPortal = ReactFabricShimModule == null || (_ReactFabricShimModule_default = ReactFabricShimModule.default) === null || _ReactFabricShimModule_default === void 0 ? void 0 : _ReactFabricShimModule_default.createPortal) !== null && _ReactFabricShimModule_default_createPortal !== void 0 ? _ReactFabricShimModule_default_createPortal : ReactFabricShimModule.createPortal;
+-    } catch (err) {
+-      return console.info("Note: error importing portal, defaulting to non-native portals", err), null;
+-    }
+-    try {
+-      var _ReactNativeShimModule_default,
+-        ReactNativeShimModule = require("react-native/Libraries/Renderer/shims/ReactNative"),
+-        _ReactNativeShimModule_default_createPortal;
+-      return (_ReactNativeShimModule_default_createPortal = ReactNativeShimModule == null || (_ReactNativeShimModule_default = ReactNativeShimModule.default) === null || _ReactNativeShimModule_default === void 0 ? void 0 : _ReactNativeShimModule_default.createPortal) !== null && _ReactNativeShimModule_default_createPortal !== void 0 ? _ReactNativeShimModule_default_createPortal : ReactNativeShimModule.createPortal;
+-    } catch (err) {
+-      return console.info("Note: error importing portal, defaulting to non-native portals", err), null;
+-    }
+-  }(),
++// skip native portal to avoid "property is not writable" error with RN 0.81+
++var createPortal = null,
+   Portal = function (propsIn) {
+     var rootTag = React.useContext(RootTagContext),
+       zIndex = useStackedZIndex(getStackedZIndexProps(propsIn)),

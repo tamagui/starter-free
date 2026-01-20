@@ -15,12 +15,8 @@ import {
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
 import { Platform } from 'react-native'
-import { useLink } from 'solito/navigation'
 
-export function HomeScreen() {
-  const linkProps = useLink({
-    href: '/user/nate',
-  })
+export function HomeScreen({ onLinkPress }: { onLinkPress?: () => void }) {
 
   return (
     <YStack
@@ -63,7 +59,7 @@ export function HomeScreen() {
         <Separator />
       </YStack>
 
-      <Button {...linkProps}>Link to user</Button>
+      <Button onPress={onLinkPress}>Link to user</Button>
 
       <SheetDemo />
     </YStack>
@@ -86,7 +82,7 @@ function SheetDemo() {
       />
       <Sheet
         modal
-        animation="medium"
+        transition="medium"
         open={open}
         onOpenChange={setOpen}
         snapPoints={[80]}
@@ -96,7 +92,7 @@ function SheetDemo() {
       >
         <Sheet.Overlay
           bg="$shadow4"
-          animation="lazy"
+          transition="lazy"
           enterStyle={{ opacity: 0 }}
           exitStyle={{ opacity: 0 }}
         />

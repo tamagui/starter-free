@@ -30,7 +30,10 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-router", "expo-font"],
+    "plugins": [
+      ["expo-router", { "root": "./app" }],
+      "expo-font"
+    ],
     "experiments": {
       "typedRoutes": true
     }

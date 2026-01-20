@@ -30,6 +30,9 @@ module.exports = (api) => {
               },
             ],
           ]),
+      ['transform-inline-environment-variables', {
+        include: ['TAMAGUI_USE_NATIVE_PORTAL'],
+      }],
     ],
   }
 }

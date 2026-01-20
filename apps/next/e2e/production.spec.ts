@@ -75,9 +75,10 @@ test.describe('Production Mode', () => {
     // Try to find and interact with a button
     const buttons = await page.locator('button').all()
 
-    if (buttons.length > 0) {
+    const firstButton = buttons[0]
+    if (firstButton) {
       // Click the first button to verify interactivity works after hydration
-      await buttons[0].click()
+      await firstButton.click()
 
       // Wait a bit to see if any errors occur
       await page.waitForTimeout(500)

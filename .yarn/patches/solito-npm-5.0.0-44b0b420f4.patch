@@ -1,0 +1,39 @@
+diff --git a/build/app/navigation/use-link.js b/build/app/navigation/use-link.js
+index 47b75d5707c6c68d57dd3046cd62b606b2bec109..9cf86540dd9fb7da57f1d196a2cce2ec675e8f98 100644
+--- a/build/app/navigation/use-link.js
++++ b/build/app/navigation/use-link.js
+@@ -34,7 +34,7 @@ export function useLink({ href, replace, experimental, }) {
+         }
+     };
+     return {
+-        accessibilityRole: 'link',
++        role: 'link',
+         onPress,
+         href,
+     };
+diff --git a/build/link/core.native.js b/build/link/core.native.js
+index 21ea82298e9f91950085d7ae963d2b35a4f6468e..d01abe778363c4f2b4669a0378fe8296c8b2a724 100644
+--- a/build/link/core.native.js
++++ b/build/link/core.native.js
+@@ -9,7 +9,7 @@ function LinkCore({ children, href, as, Component, replace, experimental, target
+         experimental,
+     }).onPress;
+     const onPress = 'onPress' in props ? props.onPress : undefined;
+-    return (_jsx(Component, { accessibilityRole: "link", style: style, ...props, onPress: (e) => {
++    return (_jsx(Component, { role: "link", style: style, ...props, onPress: (e) => {
+             // @ts-expect-error: onPress is not a valid prop for the Component
+             onPress?.(e);
+             const link = as || href;
+diff --git a/build/link/use-custom-link.js b/build/link/use-custom-link.js
+index 795bcacf287294c28627f3f67825b02dd5bb4b4d..ee39574e8282e45987e73eb2350a82f29d56463b 100644
+--- a/build/link/use-custom-link.js
++++ b/build/link/use-custom-link.js
+@@ -37,7 +37,7 @@ export function useLink({ href, as, shallow, scroll, replace, experimental, }) {
+         }
+     };
+     return {
+-        accessibilityRole: 'link',
++        role: 'link',
+         onPress,
+         href: router.parseNextPath(as || href),
+     };

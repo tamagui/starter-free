@@ -1,5 +1,13 @@
 # Tamagui + Solito + Next + Expo Monorepo
 
+> **We highly recommend using [Takeout](https://tamagui.dev/takeout) instead** - a much more comprehensive and actively maintained starter. Available in free and pro versions:
+>
+> - [Takeout Overview](https://tamagui.dev/takeout)
+> - [Live Demo](https://takeout.tamagui.dev)
+> - [Takeout Free on GitHub](https://github.com/tamagui/takeout-free)
+>
+> This repository is not well maintained.
+
 ```sh
 npm create tamagui
 ```
