@@ -20,6 +20,18 @@ module.exports = {
     resolveAlias: {
       'react-native': 'react-native-web',
       'react-native-svg': '@tamagui/react-native-svg',
+      'react-native-safe-area-context': './shims/react-native-safe-area-context.js',
     },
+    resolveExtensions: [
+      '.web.tsx',
+      '.web.ts',
+      '.web.js',
+      '.web.jsx',
+      '.tsx',
+      '.ts',
+      '.js',
+      '.jsx',
+      '.json',
+    ],
   },
 }
