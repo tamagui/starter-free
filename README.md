@@ -52,6 +52,8 @@ You can add other folders inside of `packages/` if you know what you're doing an
 
 ## 🏁 Start the app
 
+- Enable corepack: `corepack enable`
+
 - Install dependencies: `yarn`
 
 - Next.js local dev: `yarn web`
@@ -107,6 +109,6 @@ You may potentially want to have the native module transpiled for the next app. 
 ### Deploying to Vercel
 
 - Root: `apps/next`
-- Install command to be `yarn set version stable && yarn install`
-- Build command: leave default setting
+- Install command: leave default setting
+- Build command:`yarn web:prod`
 - Output dir: leave default setting
