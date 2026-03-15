@@ -49,6 +49,7 @@ You can add other folders inside of `packages/` if you know what you're doing an
 > - rename `pages-example-user` to `user` and be sure to update `linkTarget` in `screen.tsx` to `user` as well
 > - delete `SwitchRouterButton.tsx` component and remove it from `screen.tsx` and `packages/ui/src/index.tsx`
 > - search for `pagesMode` keyword and remove it
+> - set Tamagui `appDir` variable to `false` in `apps/next/next.config.js` 
 
 ## 🏁 Start the app
 
