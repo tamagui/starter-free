@@ -13,7 +13,7 @@
     "watch": "ultra -r --no-pretty --concurrency 400 watch",
     "vercel:install": "yarn set version 3.5 && yarn install",
     "web": "yarn build && cd apps/next && yarn dev",
-    "web:extract": "DISABLE_EXTRACTION=false yarn workspace next-app dev",
+    "web:extract": "yarn workspace next-app build",
     "web:prod": "yarn workspace next-app build",
     "web:prod:serve": "yarn workspace next-app serve",
     "postinstall": "yarn check-tamagui && yarn build",
